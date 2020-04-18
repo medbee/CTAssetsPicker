@@ -7,6 +7,7 @@
 //
 
 #import "PHImageManager+CTAssetsPickerController.h"
+#import <UIKit/UIKit.h>
 
 @implementation PHImageManager (CTAssetsPickerController)
 

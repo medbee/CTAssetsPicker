@@ -36,7 +36,7 @@
 #import <CTAssetsPickerController/CTAssetSelectionLabel.h>
 #import <CTAssetsPickerController/CTAssetsPageView.h>
 
-
+#import "UIColor+SKDarkMode.h"
 
 @interface CTApperanceViewController ()
 
@@ -58,9 +58,9 @@
     
     // set appearance
     // for demo purpose. you might put the code in app delegate's application:didFinishLaunchingWithOptions: method
-    self.color1 = [UIColor colorWithRed:102.0/255.0 green:161.0/255.0 blue:130.0/255.0 alpha:1];
-    self.color2 = [UIColor colorWithRed:60.0/255.0 green:71.0/255.0 blue:75.0/255.0 alpha:1];
-    self.color3 = [UIColor colorWithWhite:0.9 alpha:1];
+    self.color1 = [[UIColor colorWithRed:102.0/255.0 green:161.0/255.0 blue:130.0/255.0 alpha:1] adaptive];
+    self.color2 = [[UIColor colorWithRed:60.0/255.0 green:71.0/255.0 blue:75.0/255.0 alpha:1] adaptive];
+    self.color3 = [[UIColor colorWithWhite:0.9 alpha:1] adaptive];
     self.font   = [UIFont fontWithName:@"Futura-Medium" size:22.0];
 
     // Navigation Bar apperance
@@ -113,11 +113,11 @@
     
     // grid view cell
     CTAssetsGridViewCell *assetsGridViewCell = [CTAssetsGridViewCell appearance];
-    assetsGridViewCell.highlightedColor = [UIColor colorWithWhite:1 alpha:0.3];
+    assetsGridViewCell.highlightedColor = [[UIColor colorWithWhite:1 alpha:0.3] adaptive];
     
     // selected grid view
     CTAssetsGridSelectedView *assetsGridSelectedView = [CTAssetsGridSelectedView appearance];
-    assetsGridSelectedView.selectedBackgroundColor = [UIColor colorWithWhite:0 alpha:0.5];
+    assetsGridSelectedView.selectedBackgroundColor = [[UIColor colorWithWhite:0 alpha:0.5] adaptive];
     assetsGridSelectedView.tintColor = self.color1;
     assetsGridSelectedView.borderWidth = 3.0;
     
@@ -166,7 +166,7 @@
                                       forState:UIControlStateNormal];
     
     UITableView *assetCollectionView = [UITableView appearanceWhenContainedIn:[CTAssetsPickerController class], nil];
-    assetCollectionView.backgroundColor = [UIColor whiteColor];
+    assetCollectionView.backgroundColor = [[UIColor whiteColor] adaptive];
     
     CTAssetCollectionViewCell *assetCollectionViewCell = [CTAssetCollectionViewCell appearance];
     assetCollectionViewCell.titleFont = nil;
