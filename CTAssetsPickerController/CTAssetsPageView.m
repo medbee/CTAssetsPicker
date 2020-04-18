@@ -27,6 +27,7 @@
 #import <PureLayout/PureLayout.h>
 #import "CTAssetsPickerDefines.h"
 #import "CTAssetsPageView.h"
+#import "Categories/DarkMode/UIColor+SKDarkMode.h"
 
 @interface CTAssetsPageView ()
 
@@ -64,14 +65,14 @@
 - (void)setPageBackgroundColor:(UIColor *)backgroundColor
 {
     UIColor *color = (backgroundColor) ? backgroundColor : CTAssetsPageViewPageBackgroundColor;
-    _pageBackgroundColor = color;
-    self.backgroundColor = color;
+    _pageBackgroundColor = [color adaptive];
+    self.backgroundColor = [color adaptive];
 }
 
 - (void)setFullscreenBackgroundColor:(UIColor *)fullscreenBackgroundColor
 {
     UIColor *color = (fullscreenBackgroundColor) ? fullscreenBackgroundColor : CTAssetsPageViewFullscreenBackgroundColor;
-    _fullscreenBackgroundColor = color;
+    _fullscreenBackgroundColor = [color adaptive];
 }
 
 

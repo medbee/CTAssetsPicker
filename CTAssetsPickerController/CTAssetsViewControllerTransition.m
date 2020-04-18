@@ -31,7 +31,7 @@
 #import "CTAssetItemViewController.h"
 #import "CTAssetScrollView.h"
 #import "CTAssetsPageView.h"
-
+#import "Categories/DarkMode/UIColor+SKDarkMode.h"
 
 
 @interface CTAssetsViewControllerTransition ()
@@ -55,7 +55,7 @@
 {
     UIView *containerView = [transitionContext containerView];
     
-    UIColor *backgroundColor = [CTAssetsPageView appearance].pageBackgroundColor;
+    UIColor *backgroundColor = [[CTAssetsPageView appearance].pageBackgroundColor adaptive];
     containerView.backgroundColor = (backgroundColor) ? backgroundColor : CTAssetsPageViewPageBackgroundColor;
 
     if (self.operation == UINavigationControllerOperationPush)
@@ -95,7 +95,7 @@
         
         // Create the mask
         UIView *mask            = [[UIView alloc] initWithFrame:startBounds];
-        mask.backgroundColor    = [UIColor whiteColor];
+        mask.backgroundColor    = [[UIColor whiteColor] adaptive];
         
         // Prepare transition
         snapshot.transform  = CGAffineTransformMakeScale(startScale, startScale);;
@@ -162,7 +162,7 @@
         CGRect endBounds    = CGRectMake((width-length)/2, (height-length)/2, length, length);
         
         UIView *mask            = [[UIView alloc] initWithFrame:snapshot.bounds];
-        mask.backgroundColor    = [UIColor whiteColor];
+        mask.backgroundColor    = [[UIColor whiteColor] adaptive];
         
         // Prepare transition
         snapshot.transform      = CGAffineTransformMakeScale(startScale, startScale);
@@ -222,7 +222,7 @@
     
     UIGraphicsBeginImageContextWithOptions(size, YES, 0);
     
-    [[UIColor whiteColor] set];
+    [[[UIColor whiteColor] adaptive] set];
     UIRectFill(CGRectMake(0, 0, size.width, size.height));
     
     [imageView.image drawInRect:CGRectMake(0, 0, size.width, size.height)];

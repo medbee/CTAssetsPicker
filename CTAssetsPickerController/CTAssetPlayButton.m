@@ -28,7 +28,7 @@
 #import "CTAssetPlayButton.h"
 #import "NSBundle+CTAssetsPickerController.h"
 #import "UIImage+CTAssetsPickerController.h"
-
+#import "Categories/DarkMode/UIColor+SKDarkMode.h"
 
 
 @interface CTAssetPlayButton ()
@@ -96,7 +96,7 @@
     self.vibrancyView = vibrancyView;
     
     UIView *vibrancyFill = [UIView newAutoLayoutView];
-    vibrancyFill.backgroundColor = [UIColor whiteColor];
+    vibrancyFill.backgroundColor = [[UIColor whiteColor] adaptive];
     vibrancyFill.userInteractionEnabled = NO;
     self.vibrancyFill = vibrancyFill;
     
@@ -110,7 +110,7 @@
 - (void)setupHightlightedView
 {
     UIView *highlightedView = [UIView newAutoLayoutView];
-    highlightedView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.5];
+    highlightedView.backgroundColor = [[UIColor colorWithWhite:0 alpha:0.5] adaptive];
     highlightedView.userInteractionEnabled = NO;
     highlightedView.hidden = YES;
     self.highlightedView = highlightedView;
@@ -121,7 +121,7 @@
 - (void)setupColorView
 {
     UIView *colorView = [UIView newAutoLayoutView];
-    colorView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.8];
+    colorView.backgroundColor = [[UIColor colorWithWhite:1 alpha:0.8] adaptive];
     colorView.userInteractionEnabled = NO;
     self.colorView = colorView;
     

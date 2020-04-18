@@ -29,7 +29,7 @@
 #import "CTAssetsGridSelectedView.h"
 #import "CTAssetCheckmark.h"
 #import "CTAssetSelectionLabel.h"
-
+#import "Categories/DarkMode/UIColor+SKDarkMode.h"
 
 
 
@@ -111,7 +111,7 @@
 - (void)setSelectedBackgroundColor:(UIColor *)backgroundColor
 {
     UIColor *color = (backgroundColor) ? backgroundColor : CTAssetsGridSelectedViewBackgroundColor;
-    self.backgroundColor = color;
+    self.backgroundColor = [color adaptive];
 }
 
 - (CGFloat)borderWidth
@@ -127,7 +127,7 @@
 - (void)setTintColor:(UIColor *)tintColor
 {
     UIColor *color = (tintColor) ? tintColor : CTAssetsGridSelectedViewTintColor;
-    self.layer.borderColor = color.CGColor;
+    self.layer.borderColor = [color adaptive].CGColor;
 }
 
 

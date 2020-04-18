@@ -30,7 +30,7 @@
 #import "NSBundle+CTAssetsPickerController.h"
 #import "UIImage+CTAssetsPickerController.h"
 #import "NSNumberFormatter+CTAssetsPickerController.h"
-
+#import "Categories/DarkMode/UIColor+SKDarkMode.h"
 
 
 @interface CTAssetCollectionViewCell ()
@@ -159,13 +159,13 @@
 - (void)setTitleTextColor:(UIColor *)titleTextColor
 {
     UIColor *color = (titleTextColor) ? titleTextColor : CTAssetCollectionViewCellTitleTextColor;
-    _titleTextColor = color;
+    _titleTextColor = [color adaptive];
 }
 
 - (void)setSelectedTitleTextColor:(UIColor *)titleTextColor
 {
     UIColor *color = (titleTextColor) ? titleTextColor : CTAssetCollectionViewCellTitleTextColor;
-    _selectedTitleTextColor = color;
+    _selectedTitleTextColor = [color adaptive];
 }
 
 - (UIFont *)countFont
@@ -182,25 +182,25 @@
 - (void)setCountTextColor:(UIColor *)countTextColor
 {
     UIColor *color = (countTextColor) ? countTextColor : CTAssetCollectionViewCellCountTextColor;
-    _countTextColor = color;
+    _countTextColor = [color adaptive];
 }
 
 - (void)setSelectedCountTextColor:(UIColor *)countTextColor
 {
     UIColor *color = (countTextColor) ? countTextColor : CTAssetCollectionViewCellCountTextColor;
-    _selectedCountTextColor = color;
+    _selectedCountTextColor = [color adaptive];
 }
 
 - (void)setAccessoryColor:(UIColor *)accessoryColor
 {
     UIColor *color = (accessoryColor) ? accessoryColor : CTAssetCollectionViewCellAccessoryColor;
-    _accessoryColor = color;
+    _accessoryColor = [color adaptive];
 }
 
 - (void)setSelectedAccessoryColor:(UIColor *)accessoryColor
 {
     UIColor *color = (accessoryColor) ? accessoryColor : CTAssetCollectionViewCellAccessoryColor;
-    _selectedAccessoryColor = color;
+    _selectedAccessoryColor = [color adaptive];
 }
 
 - (UIColor *)selectedBackgroundColor
@@ -215,7 +215,7 @@
     else
     {
         UIView *view = [UIView new];
-        view.backgroundColor = selectedBackgroundColor;
+        view.backgroundColor = [selectedBackgroundColor adaptive];
         self.selectedBackgroundView = view;
     }
 }

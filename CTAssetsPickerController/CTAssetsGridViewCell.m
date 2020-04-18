@@ -31,7 +31,7 @@
 #import "PHAsset+CTAssetsPickerController.h"
 #import "NSDateFormatter+CTAssetsPickerController.h"
 #import "UIImage+CTAssetsPickerController.h"
-
+#import "Categories/DarkMode/UIColor+SKDarkMode.h"
 
 
 @interface CTAssetsGridViewCell ()
@@ -112,7 +112,7 @@
 - (void)setDisabledColor:(UIColor *)disabledColor
 {
     UIColor *color = (disabledColor) ? disabledColor : CTAssetsGridViewCellDisabledColor;
-    self.disabledView.backgroundColor = color;
+    self.disabledView.backgroundColor = [color adaptive];
 }
 
 - (UIColor *)highlightedColor
@@ -123,7 +123,7 @@
 - (void)setHighlightedColor:(UIColor *)highlightedColor
 {
     UIColor *color = (highlightedColor) ? highlightedColor : CTAssetsGridViewCellHighlightedColor;
-    self.highlightedView.backgroundColor = color;
+    self.highlightedView.backgroundColor = [color adaptive];
 }
 
 

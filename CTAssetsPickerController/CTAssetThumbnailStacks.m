@@ -28,7 +28,7 @@
 #import "CTAssetsPickerDefines.h"
 #import "CTAssetThumbnailStacks.h"
 #import "CTAssetThumbnailView.h"
-
+#import "Categories/DarkMode/UIColor+SKDarkMode.h"
 
 @interface CTAssetThumbnailStacks ()
 
@@ -70,7 +70,7 @@
     {
         CTAssetThumbnailView *thumbnailView = [CTAssetThumbnailView newAutoLayoutView];
         thumbnailView.showsDuration = NO;
-        thumbnailView.layer.borderColor = [UIColor whiteColor].CGColor;
+        thumbnailView.layer.borderColor = [[UIColor whiteColor] adaptive].CGColor;
         thumbnailView.layer.borderWidth = 0.5f;
         
         [thumbnailViews addObject:thumbnailView];

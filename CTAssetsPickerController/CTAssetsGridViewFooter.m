@@ -29,7 +29,7 @@
 #import "CTAssetsGridViewFooter.h"
 #import "NSNumberFormatter+CTAssetsPickerController.h"
 #import "NSBundle+CTAssetsPickerController.h"
-
+#import "Categories/DarkMode/UIColor+SKDarkMode.h"
 
 
 
@@ -94,7 +94,7 @@
 - (void)setTextColor:(UIColor *)textColor
 {
     UIColor *color = (textColor) ? textColor : CTAssetsGridViewFooterTextColor;
-    self.label.textColor = color;
+    self.label.textColor = [color adaptive];
 }
 
 

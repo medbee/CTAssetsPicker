@@ -40,7 +40,7 @@
 #import "NSIndexSet+CTAssetsPickerController.h"
 #import "NSBundle+CTAssetsPickerController.h"
 #import "PHImageManager+CTAssetsPickerController.h"
-
+#import "Categories/DarkMode/UIColor+SKDarkMode.h"
 
 
 
@@ -169,7 +169,7 @@ NSString * const CTAssetsGridViewFooterIdentifier = @"CTAssetsGridViewFooterIden
 
 - (void)setupViews
 {
-    self.collectionView.backgroundColor = [UIColor colorWithWhite:0 alpha:0];
+    self.collectionView.backgroundColor = [[UIColor colorWithWhite:0 alpha:0] adaptive];
     CTAssetsGridView *gridView = [CTAssetsGridView new];
     [self.view insertSubview:gridView atIndex:0];
     [self.view setNeedsUpdateConstraints];

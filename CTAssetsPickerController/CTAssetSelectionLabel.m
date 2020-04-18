@@ -27,7 +27,7 @@
 #import <PureLayout/PureLayout.h>
 #import "CTAssetSelectionLabel.h"
 #import "CTAssetsPickerDefines.h"
-
+#import "Categories/DarkMode/UIColor+SKDarkMode.h"
 
 /**
  *  The label to show selection index.
@@ -114,7 +114,7 @@
 - (void)setBorderColor:(UIColor *)borderColor
 {
     UIColor *color = (borderColor) ? borderColor : CTAssetLabelBorderColor;
-    self.layer.borderColor = color.CGColor;
+    self.layer.borderColor = [color adaptive].CGColor;
 }
 
 /**

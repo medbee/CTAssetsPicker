@@ -27,6 +27,7 @@
 #import <PureLayout/PureLayout.h>
 #import "CTAssetsPickerDefines.h"
 #import "CTAssetsGridView.h"
+#import "Categories/DarkMode/UIColor+SKDarkMode.h"
 
 @interface CTAssetsGridView ()
 
@@ -66,7 +67,7 @@
 - (void)setGridBackgroundColor:(UIColor *)backgroundColor
 {
     UIColor *color = (backgroundColor) ? (backgroundColor) : CTAssetsGridViewBackgroundColor;
-    self.backgroundColor = color;
+    self.backgroundColor = [color adaptive];
 }
 
 
