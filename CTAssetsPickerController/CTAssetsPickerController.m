@@ -39,7 +39,7 @@
 #import "NSNumberFormatter+CTAssetsPickerController.h"
 #import "CTAssetsNavigationController.h"
 
-
+#import "Categories/DarkMode/UIColor+SKDarkMode.h"
 
 NSString * const CTAssetsPickerSelectedAssetsDidChangeNotification = @"CTAssetsPickerSelectedAssetsDidChangeNotification";
 NSString * const CTAssetsPickerDidSelectAssetNotification = @"CTAssetsPickerDidSelectAssetNotification";
@@ -234,7 +234,7 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
 
 - (void)setupViews
 {
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [[UIColor whiteColor] adaptive];
 }
 
 
@@ -293,7 +293,7 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
 - (UIViewController *)emptyViewController
 {
     UIViewController *vc                = [UIViewController new];
-    vc.view.backgroundColor             = [UIColor whiteColor];
+    vc.view.backgroundColor             = [[UIColor whiteColor] adaptive];
     vc.navigationItem.hidesBackButton   = YES;
  
     return vc;

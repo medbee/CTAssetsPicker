@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B3423A81CB6E9C7003509E0 /* PHImageManager+CTAssetsPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B3423A71CB6E9C7003509E0 /* PHImageManager+CTAssetsPickerController.m */; };
-		53509921244B24A1000C123A /* UIColor+SKDarkMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 53509920244B24A1000C123A /* UIColor+SKDarkMode.m */; };
+		5350992B244B5D84000C123A /* UIColor+SKDarkMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 5350992A244B5D84000C123A /* UIColor+SKDarkMode.m */; };
 		6D0CA8757AEC322694B7DE0B /* Pods_CTAssetsPickerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9459CFA098C98D107EA33DCD /* Pods_CTAssetsPickerDemo.framework */; };
 		AD0786D91B428313003C8863 /* CTBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0786D81B428313003C8863 /* CTBasicViewController.m */; };
 		AD0786DF1B42864F003C8863 /* CTSelectedAssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD0786DE1B42864F003C8863 /* CTSelectedAssetsViewController.m */; };
@@ -37,8 +37,8 @@
 		0B3423A61CB6E9C7003509E0 /* PHImageManager+CTAssetsPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PHImageManager+CTAssetsPickerController.h"; sourceTree = "<group>"; };
 		0B3423A71CB6E9C7003509E0 /* PHImageManager+CTAssetsPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PHImageManager+CTAssetsPickerController.m"; sourceTree = "<group>"; };
 		2205440A00D9D7E5D9DD9CAC /* Pods-CTAssetsPickerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTAssetsPickerDemo.debug.xcconfig"; path = "Target Support Files/Pods-CTAssetsPickerDemo/Pods-CTAssetsPickerDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		5350991F244B24A1000C123A /* UIColor+SKDarkMode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+SKDarkMode.h"; sourceTree = "<group>"; };
-		53509920244B24A1000C123A /* UIColor+SKDarkMode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SKDarkMode.m"; sourceTree = "<group>"; };
+		53509929244B5D84000C123A /* UIColor+SKDarkMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+SKDarkMode.h"; sourceTree = "<group>"; };
+		5350992A244B5D84000C123A /* UIColor+SKDarkMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+SKDarkMode.m"; sourceTree = "<group>"; };
 		93A30ACAFD5946B04E8175E6 /* Pods-CTAssetsPickerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CTAssetsPickerDemo.release.xcconfig"; path = "Target Support Files/Pods-CTAssetsPickerDemo/Pods-CTAssetsPickerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		9459CFA098C98D107EA33DCD /* Pods_CTAssetsPickerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CTAssetsPickerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		969CB85D1C9C3ADF002687B5 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -221,11 +221,11 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		5350991E244B2465000C123A /* DarkMode */ = {
+		53509928244B5D84000C123A /* DarkMode */ = {
 			isa = PBXGroup;
 			children = (
-				5350991F244B24A1000C123A /* UIColor+SKDarkMode.h */,
-				53509920244B24A1000C123A /* UIColor+SKDarkMode.m */,
+				53509929244B5D84000C123A /* UIColor+SKDarkMode.h */,
+				5350992A244B5D84000C123A /* UIColor+SKDarkMode.m */,
 			);
 			path = DarkMode;
 			sourceTree = "<group>";
@@ -268,7 +268,6 @@
 		ADD965BD1AAD4C49002A26A2 = {
 			isa = PBXGroup;
 			children = (
-				5350991E244B2465000C123A /* DarkMode */,
 				ADD965F21AAD5780002A26A2 /* CTAssetsPickerController */,
 				ADD965C81AAD4C49002A26A2 /* CTAssetsPickerDemo */,
 				ADD965C71AAD4C49002A26A2 /* Products */,
@@ -368,6 +367,7 @@
 		ADD965F31AAD5780002A26A2 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				53509928244B5D84000C123A /* DarkMode */,
 				AD30D7FF1AAEE8DC00C79E3D /* CTAssetsPickerController+Internal.h */,
 				AD18AFD11BCB9025008B507D /* CTAssetsPageViewController+Internal.h */,
 				ADD965FC1AAD5780002A26A2 /* NSBundle+CTAssetsPickerController.h */,
@@ -555,7 +555,7 @@
 				ADA073101B462C98009FB7C7 /* CTLastWeekViewController.m in Sources */,
 				AD4B06C81B428EEF00D99C5A /* CTiCloudAlbumsViewController.m in Sources */,
 				AD0786E21B428A73003C8863 /* CTDefaultAlbumViewController.m in Sources */,
-				53509921244B24A1000C123A /* UIColor+SKDarkMode.m in Sources */,
+				5350992B244B5D84000C123A /* UIColor+SKDarkMode.m in Sources */,
 				0B3423A81CB6E9C7003509E0 /* PHImageManager+CTAssetsPickerController.m in Sources */,
 				AD0786D91B428313003C8863 /* CTBasicViewController.m in Sources */,
 				ADA0730D1B4625AA009FB7C7 /* CTUITweaksViewController.m in Sources */,
