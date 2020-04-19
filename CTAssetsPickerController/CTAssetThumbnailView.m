@@ -30,7 +30,7 @@
 #import "CTAssetThumbnailOverlay.h"
 #import "PHAsset+CTAssetsPickerController.h"
 #import "NSDateFormatter+CTAssetsPickerController.h"
-
+#import "Categories/DarkMode/UIColor+SKDarkMode.h"
 
 
 @interface CTAssetThumbnailView ()

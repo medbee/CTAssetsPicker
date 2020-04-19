@@ -11,7 +11,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface UIColor (SKDarkMode)
-//@property (class, nonatomic, readonly) UIColor *adaptive;
 @property (nonatomic, readonly) UIColor *adaptive;
 -(UIColor* _Nonnull)adaptiveWithDark:(UIColor* _Nonnull)color;
 @end

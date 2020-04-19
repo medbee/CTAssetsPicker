@@ -29,7 +29,7 @@
 #import "CTAssetsPickerAccessDeniedView.h"
 #import "NSBundle+CTAssetsPickerController.h"
 #import "UIImage+CTAssetsPickerController.h"
-
+#import "Categories/DarkMode/UIColor+SKDarkMode.h"
 
 
 @interface CTAssetsPickerAccessDeniedView ()

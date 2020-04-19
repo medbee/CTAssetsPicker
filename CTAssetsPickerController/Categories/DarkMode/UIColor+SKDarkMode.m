@@ -8,6 +8,9 @@
 
 #import "UIColor+SKDarkMode.h"
 
+// colors reference and good article
+// https://nshipster.com/dark-mode/
+
 @implementation UIColor (SKDarkMode)
 
 -(UIColor*)adaptive {
@@ -15,16 +18,16 @@
         return [UIColor colorWithDynamicProvider:^UIColor * _Nonnull(UITraitCollection * _Nonnull traits) {
             if (traits.userInterfaceStyle == UIUserInterfaceStyleDark) {
                 if (self == [UIColor blackColor]) {
-                    return [UIColor systemGray6Color];
-                }
-                else if (self == [UIColor darkGrayColor]) {
                     return [UIColor systemGrayColor];
                 }
+                else if (self == [UIColor darkGrayColor]) {
+                    return [UIColor systemGray2Color];
+                }
                 else if (self == [UIColor lightGrayColor]) {
-                    return [UIColor systemGray5Color];
+                    return [UIColor systemGray4Color];
                 }
                 else if (self == [UIColor whiteColor]) {
-                    return [UIColor lightTextColor];
+                    return [UIColor systemGray6Color];
                 }
                 else if (self == [UIColor grayColor]) {
                     return [UIColor systemGray3Color];
@@ -58,6 +61,12 @@
                 }
                 else if (self == [UIColor clearColor]) {
                     return [UIColor clearColor];
+                }
+                else if (self == [UIColor darkTextColor]) {
+                    return [UIColor lightGrayColor];
+                }
+                else if (self == [UIColor lightTextColor]) {
+                    return [UIColor systemGray6Color];
                 }
                 else {
                     CGFloat hue;

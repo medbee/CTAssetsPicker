@@ -59,7 +59,7 @@
     // set appearance
     // for demo purpose. you might put the code in app delegate's application:didFinishLaunchingWithOptions: method
     self.color1 = [[UIColor colorWithRed:102.0/255.0 green:161.0/255.0 blue:130.0/255.0 alpha:1] adaptive];
-    self.color2 = [[UIColor colorWithRed:60.0/255.0 green:71.0/255.0 blue:75.0/255.0 alpha:1] adaptive];
+    self.color2 = [[UIColor colorWithRed:60.0/255.0 green:71.0/255.0 blue:75.0/255.0 alpha:1] adaptiveWithDark:[UIColor whiteColor]];
     self.color3 = [[UIColor colorWithWhite:0.9 alpha:1] adaptive];
     self.font   = [UIFont fontWithName:@"Futura-Medium" size:22.0];
 
