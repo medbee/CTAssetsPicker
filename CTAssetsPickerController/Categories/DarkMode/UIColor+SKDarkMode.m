@@ -63,7 +63,7 @@
                     return [UIColor clearColor];
                 }
                 else if (self == [UIColor darkTextColor]) {
-                    return [UIColor lightGrayColor];
+                    return [UIColor labelColor];
                 }
                 else if (self == [UIColor lightTextColor]) {
                     return [UIColor systemGray6Color];
