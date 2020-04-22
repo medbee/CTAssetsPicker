@@ -73,8 +73,7 @@
                     CGFloat saturation;
                     CGFloat brightness;
                     CGFloat alpha;
-                    BOOL success = [self getHue:&hue saturation:&saturation brightness:&brightness alpha:&alpha];
-                    NSLog(@"success: %i hue: %0.2f, saturation: %0.2f, brightness: %0.2f, alpha: %0.2f", success, hue, saturation, brightness, alpha);
+                    [self getHue:&hue saturation:&saturation brightness:&brightness alpha:&alpha];
                     return [UIColor colorWithHue:hue saturation:saturation brightness:brightness - 0.3 alpha:alpha];
                 }
             }
