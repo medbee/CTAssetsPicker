@@ -31,13 +31,7 @@
 
 + (NSBundle *)ctassetsPickerBundle
 {
-    return [NSBundle bundleWithPath:[NSBundle ctassetsPickerBundlePath]];
-}
-
-+ (NSString *)ctassetsPickerBundlePath
-{
-    return [[NSBundle bundleForClass:[CTAssetsPickerController class]]
-            pathForResource:@"CTAssetsPickerController" ofType:@"bundle"];
+    return [NSBundle bundleForClass:[CTAssetsPickerController class]];
 }
 
 @end
