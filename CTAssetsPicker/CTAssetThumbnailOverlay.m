@@ -79,7 +79,7 @@
     
     UILabel *duration = [UILabel newAutoLayoutView];
     duration.font = [UIFont preferredFontForTextStyle:UIFontTextStyleCaption2];
-    duration.textColor = [[UIColor whiteColor] adaptive];
+    duration.textColor = [UIColor whiteColor];
     duration.lineBreakMode = NSLineBreakByTruncatingTail;
     duration.layoutMargins = UIEdgeInsetsMake(2.5, 2.5, 2.5, 2.5);
     self.duration = duration;
