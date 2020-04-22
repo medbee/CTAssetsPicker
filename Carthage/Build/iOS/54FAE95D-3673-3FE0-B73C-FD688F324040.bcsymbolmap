@@ -1,7 +1,7 @@
 BCSymbolMap Version: 2.0
 Apple clang version 11.0.3 (clang-1103.0.32.59)
 /Users/patrick/Library/Caches/org.carthage.CarthageKit/DerivedData/11.4.1_11E503a/PureLayout/v3.1.5/Build/Intermediates.noindex/ArchiveIntermediates/PureLayout_iOS/IntermediateBuildFilesPath/PureLayout.build/Release-iphoneos/PureLayout_iOS.build/DerivedSources/PureLayout_vers.c
-/Users/patrick/Developer/CTAssetsPickerController/Carthage/Checkouts/PureLayout/PureLayout
+/Users/patrick/Developer/CTAssetsPicker/Carthage/Checkouts/PureLayout/PureLayout
 -[ALiOSDemo11ViewController loadView]
 -[ALiOSDemo11ViewController updateViewConstraints]
 -[ALiOSDemo11ViewController scrollView]
@@ -57,7 +57,7 @@ __OBJC_$_INSTANCE_VARIABLES_ALiOSDemo11ViewController
 __OBJC_$_PROP_LIST_ALiOSDemo11ViewController
 __OBJC_CLASS_RO_$_ALiOSDemo11ViewController
 _OBJC_LABEL_CLASS_$
-/Users/patrick/Developer/CTAssetsPickerController/Carthage/Checkouts/PureLayout/PureLayout/Example-iOS/Demos/ALiOSDemo11ViewController.m
+/Users/patrick/Developer/CTAssetsPicker/Carthage/Checkouts/PureLayout/PureLayout/Example-iOS/Demos/ALiOSDemo11ViewController.m
 Example-iOS/Demos/ALiOSDemo11ViewController.m
 -[NSArray(PureLayout) autoInstallConstraints]
 -[NSArray(PureLayout) autoRemoveConstraints]
@@ -112,7 +112,7 @@ _OBJC_SELECTOR_REFERENCES_.75
 __OBJC_$_CATEGORY_INSTANCE_METHODS_NSArray_$_PureLayout
 __OBJC_$_CATEGORY_NSArray_$_PureLayout
 _OBJC_LABEL_CATEGORY_$
-/Users/patrick/Developer/CTAssetsPickerController/Carthage/Checkouts/PureLayout/PureLayout/PureLayout/NSArray+PureLayout.m
+/Users/patrick/Developer/CTAssetsPicker/Carthage/Checkouts/PureLayout/PureLayout/PureLayout/NSArray+PureLayout.m
 PureLayout/NSArray+PureLayout.m
 +[UIView(PureLayout) newAutoLayoutView]
 -[UIView(PureLayout) initForAutoLayout]
@@ -202,7 +202,7 @@ _OBJC_SELECTOR_REFERENCES_.125
 __OBJC_$_CATEGORY_INSTANCE_METHODS_UIView_$_PureLayout
 __OBJC_$_CATEGORY_CLASS_METHODS_UIView_$_PureLayout
 __OBJC_$_CATEGORY_UIView_$_PureLayout
-/Users/patrick/Developer/CTAssetsPickerController/Carthage/Checkouts/PureLayout/PureLayout/PureLayout/ALView+PureLayout.m
+/Users/patrick/Developer/CTAssetsPicker/Carthage/Checkouts/PureLayout/PureLayout/PureLayout/ALView+PureLayout.m
 PureLayout/ALView+PureLayout.m
 +[NSLayoutConstraint(PureLayout) al_arraysOfCreatedConstraints]
 +[NSLayoutConstraint(PureLayout) al_currentArrayOfCreatedConstraints]
@@ -236,7 +236,7 @@ _OBJC_SELECTOR_REFERENCES_.62
 __OBJC_$_CATEGORY_INSTANCE_METHODS_NSLayoutConstraint_$_PureLayout
 __OBJC_$_CATEGORY_CLASS_METHODS_NSLayoutConstraint_$_PureLayout
 __OBJC_$_CATEGORY_NSLayoutConstraint_$_PureLayout
-/Users/patrick/Developer/CTAssetsPickerController/Carthage/Checkouts/PureLayout/PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m
+/Users/patrick/Developer/CTAssetsPicker/Carthage/Checkouts/PureLayout/PureLayout/PureLayout/NSLayoutConstraint+PureLayout.m
 PureLayout/NSLayoutConstraint+PureLayout.m
 __ZL15__ARCLite__loadv
 __ZL58__arclite_NSMutableDictionary__setObject_forKeyedSubscriptP19NSMutableDictionaryP13objc_selectorP11objc_objectS4_
