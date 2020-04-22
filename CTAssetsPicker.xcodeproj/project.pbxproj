@@ -371,7 +371,7 @@
 		ADD965BD1AAD4C49002A26A2 = {
 			isa = PBXGroup;
 			children = (
-				CDEC7B0624503458009B13DF /* CTAssetsPickerController */,
+				CDEC7B0624503458009B13DF /* CTAssetsPicker */,
 				ADD965C81AAD4C49002A26A2 /* Demo */,
 				ADD965C71AAD4C49002A26A2 /* Products */,
 				028779D265E7D850E3184C69 /* Frameworks */,
@@ -411,7 +411,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		CDEC7B0624503458009B13DF /* CTAssetsPickerController */ = {
+		CDEC7B0624503458009B13DF /* CTAssetsPicker */ = {
 			isa = PBXGroup;
 			children = (
 				CDEC7B5024503458009B13DF /* Categories */,
@@ -468,7 +468,7 @@
 				CDEC7B6A24503458009B13DF /* Info.plist */,
 				CDEC7B1A24503458009B13DF /* Resources */,
 			);
-			path = CTAssetsPickerController;
+			path = CTAssetsPicker;
 			sourceTree = "<group>";
 		};
 		CDEC7B1A24503458009B13DF /* Resources */ = {
@@ -626,7 +626,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ADD965C11AAD4C49002A26A2 /* Build configuration list for PBXProject "CTAssetsPickerController" */;
+			buildConfigurationList = ADD965C11AAD4C49002A26A2 /* Build configuration list for PBXProject "CTAssetsPicker" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -996,7 +996,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = CTAssetsPickerController/Info.plist;
+				INFOPLIST_FILE = CTAssetsPicker/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1041,7 +1041,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = CTAssetsPickerController/Info.plist;
+				INFOPLIST_FILE = CTAssetsPicker/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1063,7 +1063,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ADD965C11AAD4C49002A26A2 /* Build configuration list for PBXProject "CTAssetsPickerController" */ = {
+		ADD965C11AAD4C49002A26A2 /* Build configuration list for PBXProject "CTAssetsPicker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ADD965EA1AAD4C4A002A26A2 /* Debug */,
