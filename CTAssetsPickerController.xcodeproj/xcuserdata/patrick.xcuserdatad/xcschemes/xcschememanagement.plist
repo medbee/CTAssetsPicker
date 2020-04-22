@@ -4,24 +4,18 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CTAssetsPickerController.xcscheme_^#shared#^_</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
-		</dict>
-		<key>Demo.xcscheme</key>
+		<key>CTAssetsPicker.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-	</dict>
-	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>CDEC7AF924503090009B13DF</key>
+		<key>Demo.xcscheme</key>
 		<dict>
-			<key>primary</key>
-			<true/>
+			<key>orderHint</key>
+			<integer>0</integer>
 		</dict>
 	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict/>
 </dict>
 </plist>

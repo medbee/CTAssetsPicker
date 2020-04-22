@@ -27,14 +27,14 @@
 #import "CTApperanceViewController.h"
 
 // import headers that need to be customised
-#import <CTAssetsPickerController/CTAssetCollectionViewCell.h>
-#import <CTAssetsPickerController/CTAssetsGridView.h>
-#import <CTAssetsPickerController/CTAssetsGridViewFooter.h>
-#import <CTAssetsPickerController/CTAssetsGridViewCell.h>
-#import <CTAssetsPickerController/CTAssetsGridSelectedView.h>
-#import <CTAssetsPickerController/CTAssetCheckmark.h>
-#import <CTAssetsPickerController/CTAssetSelectionLabel.h>
-#import <CTAssetsPickerController/CTAssetsPageView.h>
+#import <CTAssetsPicker/CTAssetCollectionViewCell.h>
+#import <CTAssetsPicker/CTAssetsGridView.h>
+#import <CTAssetsPicker/CTAssetsGridViewFooter.h>
+#import <CTAssetsPicker/CTAssetsGridViewCell.h>
+#import <CTAssetsPicker/CTAssetsGridSelectedView.h>
+#import <CTAssetsPicker/CTAssetCheckmark.h>
+#import <CTAssetsPicker/CTAssetSelectionLabel.h>
+#import <CTAssetsPicker/CTAssetsPageView.h>
 
 #import "UIColor+SKDarkMode.h"
 

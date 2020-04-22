@@ -24,54 +24,6 @@
 
  */
 
-#import <Foundation/Foundation.h>
-
-//! Project version number for CTAssetsPickerController.
-FOUNDATION_EXPORT double CTAssetsPickerControllerVersionNumber;
-
-//! Project version string for CTAssetsPickerController.
-FOUNDATION_EXPORT const unsigned char CTAssetsPickerControllerVersionString[];
-
-#import <CTAssetsPickerController/CTAssetCheckmark.h>
-#import <CTAssetsPickerController/CTAssetCollectionViewCell.h>
-#import <CTAssetsPickerController/CTAssetCollectionViewController.h>
-#import <CTAssetsPickerController/CTAssetItemViewController.h>
-#import <CTAssetsPickerController/CTAssetPlayButton.h>
-#import <CTAssetsPickerController/CTAssetScrollView.h>
-#import <CTAssetsPickerController/CTAssetSelectionButton.h>
-#import <CTAssetsPickerController/CTAssetSelectionLabel.h>
-#import <CTAssetsPickerController/CTAssetsGridSelectedView.h>
-#import <CTAssetsPickerController/CTAssetsGridView.h>
-#import <CTAssetsPickerController/CTAssetsGridViewCell.h>
-#import <CTAssetsPickerController/CTAssetsGridViewController.h>
-#import <CTAssetsPickerController/CTAssetsGridViewFooter.h>
-#import <CTAssetsPickerController/CTAssetsGridViewLayout.h>
-#import <CTAssetsPickerController/CTAssetsNavigationController.h>
-#import <CTAssetsPickerController/CTAssetsPageView.h>
-#import <CTAssetsPickerController/CTAssetsPageViewController.h>
-#import <CTAssetsPickerController/CTAssetsPickerAccessDeniedView.h>
-#import <CTAssetsPickerController/CTAssetsPickerController.h>
-#import <CTAssetsPickerController/CTAssetsPickerDefines.h>
-#import <CTAssetsPickerController/CTAssetsPickerNoAssetsView.h>
-#import <CTAssetsPickerController/CTAssetsViewControllerTransition.h>
-#import <CTAssetsPickerController/CTAssetThumbnailOverlay.h>
-#import <CTAssetsPickerController/CTAssetThumbnailStacks.h>
-#import <CTAssetsPickerController/CTAssetThumbnailView.h>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #import <UIKit/UIKit.h>
 #import <Photos/Photos.h>
