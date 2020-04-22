@@ -301,7 +301,6 @@
 		CDEC7B6924503458009B13DF /* CTAssetsGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTAssetsGridViewController.m; sourceTree = "<group>"; };
 		CDEC7B6A24503458009B13DF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CDEC7B6B24503458009B13DF /* CTAssetPlayButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTAssetPlayButton.m; sourceTree = "<group>"; };
-		CDEC7BB624503517009B13DF /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = SOURCE_ROOT; };
 		CDEC7BB7245035AB009B13DF /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = Carthage/Build/iOS/PureLayout.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -504,7 +503,6 @@
 				CDEC7B6524503458009B13DF /* NSBundle+CTAssetsPickerController.h */,
 				CDEC7B6624503458009B13DF /* NSDateFormatter+CTAssetsPickerController.m */,
 				CDEC7B6724503458009B13DF /* PHImageManager+CTAssetsPickerController.m */,
-				CDEC7BB624503517009B13DF /* Cartfile */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
