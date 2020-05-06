@@ -24,6 +24,9 @@
  
  */
 
+@class CTAssetsPageViewController;
+
+
 @interface CTAssetsPageViewController (Internal)
 
 @property (nonatomic, assign) BOOL allowsSelection;

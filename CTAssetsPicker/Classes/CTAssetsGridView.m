@@ -25,9 +25,9 @@
  */
 
 #import <PureLayout/PureLayout.h>
-#import "CTAssetsPickerDefines.h"
 #import "CTAssetsGridView.h"
-#import "Categories/DarkMode/UIColor+SKDarkMode.h"
+#import "CTAssetsPickerDefines.h"
+#import "UIColor+SKDarkMode.h"
 
 @interface CTAssetsGridView ()
 
@@ -40,8 +40,7 @@
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
-    if (self = [super initWithFrame:frame])
-    {
+    if (self = [super initWithFrame:frame]) {
         [self setupViews];
     }
     
@@ -75,8 +74,7 @@
 
 - (void)updateConstraints
 {
-    if (!self.didSetupConstraints)
-    {
+    if (!self.didSetupConstraints) {
         [self autoPinEdgesToSuperviewEdges];
         self.didSetupConstraints = YES;
     }

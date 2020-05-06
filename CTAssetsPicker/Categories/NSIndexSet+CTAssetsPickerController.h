@@ -26,6 +26,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface NSIndexSet (CTAssetsPickerController)
 
 - (NSArray *)ctassetsPickerIndexPathsFromIndexesWithSection:(NSUInteger)section;

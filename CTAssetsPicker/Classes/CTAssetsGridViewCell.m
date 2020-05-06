@@ -25,13 +25,13 @@
  */
 
 #import <PureLayout/PureLayout.h>
-#import "CTAssetsPickerDefines.h"
-#import "CTAssetsGridViewCell.h"
 #import "CTAssetsGridSelectedView.h"
-#import "PHAsset+CTAssetsPickerController.h"
+#import "CTAssetsGridViewCell.h"
+#import "CTAssetsPickerDefines.h"
 #import "NSDateFormatter+CTAssetsPickerController.h"
+#import "PHAsset+CTAssetsPickerController.h"
+#import "UIColor+SKDarkMode.h"
 #import "UIImage+CTAssetsPickerController.h"
-#import "Categories/DarkMode/UIColor+SKDarkMode.h"
 
 
 @interface CTAssetsGridViewCell ()
@@ -48,20 +48,16 @@
 @end
 
 
-
-
-
 @implementation CTAssetsGridViewCell
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
-    if (self = [super initWithFrame:frame])
-    {
-        self.opaque                 = YES;
+    if (self = [super initWithFrame:frame]) {
+        self.opaque = YES;
         self.isAccessibilityElement = YES;
-        self.accessibilityTraits    = UIAccessibilityTraitImage;
-        self.enabled                = YES;
-        self.showsSelectionIndex    = NO;
+        self.accessibilityTraits = UIAccessibilityTraitImage;
+        self.enabled = YES;
+        self.showsSelectionIndex = NO;
         
         [self setupViews];
     }
@@ -164,9 +160,9 @@
 
 - (void)updateConstraints
 {
-    if (!self.didSetupConstraints)
-    {
-        [NSLayoutConstraint autoSetPriority:UILayoutPriorityRequired forConstraints:^{
+    if (!self.didSetupConstraints) {
+        [NSLayoutConstraint autoSetPriority:UILayoutPriorityRequired
+                             forConstraints:^{
             [self.backgroundView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero];
             [self.disabledView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero];
             [self.highlightedView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero];
@@ -174,7 +170,7 @@
         }];
         
         [self.disabledImageView autoCenterInSuperview];
-
+        
         self.didSetupConstraints = YES;
     }
     

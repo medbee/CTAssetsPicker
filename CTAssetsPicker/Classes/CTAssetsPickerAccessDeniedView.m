@@ -1,19 +1,19 @@
 /*
- 
+
  MIT License (MIT)
- 
+
  Copyright (c) 2015 Clement CN Tsang
- 
+
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
  in the Software without restriction, including without limitation the rights
  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  copies of the Software, and to permit persons to whom the Software is
  furnished to do so, subject to the following conditions:
- 
+
  The above copyright notice and this permission notice shall be included in
  all copies or substantial portions of the Software.
- 
+
  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -21,15 +21,15 @@
  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
- 
+
  */
 
 #import <PureLayout/PureLayout.h>
-#import "CTAssetsPickerDefines.h"
 #import "CTAssetsPickerAccessDeniedView.h"
+#import "CTAssetsPickerDefines.h"
 #import "NSBundle+CTAssetsPickerController.h"
+#import "UIColor+SKDarkMode.h"
 #import "UIImage+CTAssetsPickerController.h"
-#import "Categories/DarkMode/UIColor+SKDarkMode.h"
 
 
 @interface CTAssetsPickerAccessDeniedView ()
@@ -40,18 +40,17 @@
 
 @property (nonatomic, assign) BOOL didSetupConstraints;
 
-@end;
+@end
 
 
 @implementation CTAssetsPickerAccessDeniedView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
-    if (self = [super initWithFrame:frame])
-    {
+    if (self = [super initWithFrame:frame]) {
         [self setupViews];
     }
-    
+
     return self;
 }
 
@@ -61,23 +60,23 @@
 {
     UIImageView *padlock = [self padlockImageView];
     self.padlock = padlock;
-    
-    UILabel *title      = [UILabel new];
-    title.textColor     = CTAssetsPikcerAccessDeniedViewTextColor;
-    title.font          = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
+
+    UILabel *title = [UILabel new];
+    title.textColor = CTAssetsPikcerAccessDeniedViewTextColor;
+    title.font = [UIFont preferredFontForTextStyle:UIFontTextStyleHeadline];
     title.textAlignment = NSTextAlignmentCenter;
     title.numberOfLines = 5;
-    title.text          = CTAssetsPickerLocalizedString(@"This app does not have access to your photos or videos.", nil);
+    title.text = CTAssetsPickerLocalizedString(@"This app does not have access to your photos or videos.", nil);
     self.title = title;
-    
-    UILabel *message        = [UILabel new];
-    message.textColor       = CTAssetsPikcerAccessDeniedViewTextColor;
-    message.font            = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
-    message.textAlignment   = NSTextAlignmentCenter;
-    message.numberOfLines   = 5;
-    message.text            = CTAssetsPickerLocalizedString(@"You can enable access in Privacy Settings.", nil);
+
+    UILabel *message = [UILabel new];
+    message.textColor = CTAssetsPikcerAccessDeniedViewTextColor;
+    message.font = [UIFont preferredFontForTextStyle:UIFontTextStyleBody];
+    message.textAlignment = NSTextAlignmentCenter;
+    message.numberOfLines = 5;
+    message.text = CTAssetsPickerLocalizedString(@"You can enable access in Privacy Settings.", nil);
     self.message = message;
-    
+
     [self addSubview:self.padlock];
     [self addSubview:self.title];
     [self addSubview:self.message];
@@ -87,10 +86,10 @@
 {
     UIImage *image = [UIImage ctassetsPickerImageNamed:@"AccessDeniedViewLock"];
     image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-    
+
     UIImageView *padlock = [[UIImageView alloc] initWithImage:image];
-    padlock.tintColor    = CTAssetsPikcerAccessDeniedViewTextColor;
-    
+    padlock.tintColor = CTAssetsPikcerAccessDeniedViewTextColor;
+
     return padlock;
 }
 
@@ -98,8 +97,7 @@
 
 - (void)updateConstraints
 {
-    if (!self.didSetupConstraints)
-    {
+    if (!self.didSetupConstraints) {
         [self autoCenterInSuperview];
         
         // suggested solution for issue #176
@@ -115,10 +113,10 @@
         [self.message autoAlignAxis:ALAxisVertical toSameAxisOfView:self.padlock];
         [self.message autoPinEdge:ALEdgeTop toEdge:ALEdgeBottom ofView:self.title withOffset:10];
         [self.message autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeTop];
-        
+
         self.didSetupConstraints = YES;
     }
-    
+
     [super updateConstraints];
 }
 

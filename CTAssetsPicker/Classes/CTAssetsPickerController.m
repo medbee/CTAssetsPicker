@@ -1,19 +1,19 @@
 /*
- 
+
  MIT License (MIT)
- 
+
  Copyright (c) 2015 Clement CN Tsang
- 
+
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
  in the Software without restriction, including without limitation the rights
  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  copies of the Software, and to permit persons to whom the Software is
  furnished to do so, subject to the following conditions:
- 
+
  The above copyright notice and this permission notice shall be included in
  all copies or substantial portions of the Software.
- 
+
  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -21,34 +21,32 @@
  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
- 
+
  */
 
 
-#import "CTAssetsPickerDefines.h"
-#import "CTAssetsPickerController.h"
-#import "CTAssetsPickerAccessDeniedView.h"
-#import "CTAssetsPickerNoAssetsView.h"
 #import "CTAssetCollectionViewController.h"
-#import "CTAssetsGridViewController.h"
 #import "CTAssetScrollView.h"
+#import "CTAssetsGridViewController.h"
+#import "CTAssetsNavigationController.h"
 #import "CTAssetsPageViewController.h"
+#import "CTAssetsPickerAccessDeniedView.h"
+#import "CTAssetsPickerController.h"
+#import "CTAssetsPickerDefines.h"
+#import "CTAssetsPickerNoAssetsView.h"
 #import "CTAssetsViewControllerTransition.h"
 #import "NSBundle+CTAssetsPickerController.h"
-#import "UIImage+CTAssetsPickerController.h"
 #import "NSNumberFormatter+CTAssetsPickerController.h"
-#import "CTAssetsNavigationController.h"
-
-#import "Categories/DarkMode/UIColor+SKDarkMode.h"
-
-NSString * const CTAssetsPickerSelectedAssetsDidChangeNotification = @"CTAssetsPickerSelectedAssetsDidChangeNotification";
-NSString * const CTAssetsPickerDidSelectAssetNotification = @"CTAssetsPickerDidSelectAssetNotification";
-NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDidDeselectAssetNotification";
+#import "UIColor+SKDarkMode.h"
+#import "UIImage+CTAssetsPickerController.h"
 
 
+NSString *const CTAssetsPickerSelectedAssetsDidChangeNotification = @"CTAssetsPickerSelectedAssetsDidChangeNotification";
+NSString *const CTAssetsPickerDidSelectAssetNotification = @"CTAssetsPickerDidSelectAssetNotification";
+NSString *const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDidDeselectAssetNotification";
 
-@interface CTAssetsPickerController ()
-<PHPhotoLibraryChangeObserver, UISplitViewControllerDelegate, UINavigationControllerDelegate>
+
+@interface CTAssetsPickerController () <PHPhotoLibraryChangeObserver, UISplitViewControllerDelegate, UINavigationControllerDelegate>
 
 @property (nonatomic, assign) BOOL shouldCollapseDetailViewController;
 
@@ -60,30 +58,28 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
 @end
 
 
-
 @implementation CTAssetsPickerController
 
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])
-    {
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
         _shouldCollapseDetailViewController = YES;
-        _assetCollectionThumbnailSize       = CTAssetCollectionThumbnailSize;
-        _assetCollectionFetchOptions        = nil;
-        _assetsFetchOptions                 = nil;
-        _selectedAssets                     = [NSMutableArray new];
-        _showsCancelButton                  = YES;
-        _showsEmptyAlbums                   = YES;
-        _showsNumberOfAssets                = YES;
-        _alwaysEnableDoneButton             = NO;
-        _showsSelectionIndex                = NO;
-        _defaultAssetCollection             = PHAssetCollectionSubtypeAny;
-        
+        _assetCollectionThumbnailSize = CTAssetCollectionThumbnailSize;
+        _assetCollectionFetchOptions = nil;
+        _assetsFetchOptions = nil;
+        _selectedAssets = [NSMutableArray new];
+        _showsCancelButton = YES;
+        _showsEmptyAlbums = YES;
+        _showsNumberOfAssets = YES;
+        _alwaysEnableDoneButton = NO;
+        _showsSelectionIndex = NO;
+        _defaultAssetCollection = PHAssetCollectionSubtypeAny;
+
         [self initAssetCollectionSubtypes];
         [self initThumbnailRequestOptions];
-        self.preferredContentSize           = CTAssetsPickerPopoverContentSize;
+        self.preferredContentSize = CTAssetsPickerPopoverContentSize;
     }
-    
+
     return self;
 }
 
@@ -111,13 +107,12 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
 - (UIViewController *)childViewControllerForStatusBarHidden
 {
     UIViewController *vc = self.childSplitViewController.viewControllers.lastObject;
-    
+
     if ([vc isMemberOfClass:[UINavigationController class]])
-        return ((UINavigationController *)vc).topViewController;
+        return ((UINavigationController *) vc).topViewController;
     else
         return nil;
 }
-
 
 
 #pragma mark - Init properties
@@ -142,14 +137,13 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
       @(PHAssetCollectionSubtypeAlbumSyncedFaces),
       @(PHAssetCollectionSubtypeAlbumImported),
       @(PHAssetCollectionSubtypeAlbumCloudShared)];
-    
+
     // Add iOS 9's new albums
-    if ([[PHAsset new] respondsToSelector:@selector(sourceType)])
-    {
+    if ([[PHAsset new] respondsToSelector:@selector(sourceType)]) {
         NSMutableArray *subtypes = [NSMutableArray arrayWithArray:self.assetCollectionSubtypes];
         [subtypes insertObject:@(PHAssetCollectionSubtypeSmartAlbumSelfPortraits) atIndex:4];
         [subtypes insertObject:@(PHAssetCollectionSubtypeSmartAlbumScreenshots) atIndex:10];
-        
+
         self.assetCollectionSubtypes = [NSArray arrayWithArray:subtypes];
     }
 }
@@ -159,7 +153,7 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
     PHImageRequestOptions *options = [[PHImageRequestOptions alloc] init];
     options.resizeMode = PHImageRequestOptionsResizeModeFast;
     options.deliveryMode = PHImageRequestOptionsDeliveryModeHighQualityFormat;
- 
+
     _thumbnailRequestOptions = options;
 }
 
@@ -169,21 +163,18 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
 - (void)checkAuthorizationStatus
 {
     PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
-    
-    switch (status)
-    {
+
+    switch (status) {
         case PHAuthorizationStatusNotDetermined:
             [self requestAuthorizationStatus];
             break;
         case PHAuthorizationStatusRestricted:
-        case PHAuthorizationStatusDenied:
-        {
+        case PHAuthorizationStatusDenied: {
             [self showAccessDenied];
             break;
         }
         case PHAuthorizationStatusAuthorized:
-        default:
-        {
+        default: {
             [self checkAssetsCount];
             break;
         }
@@ -195,17 +186,15 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
 
 - (void)requestAuthorizationStatus
 {
-    [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status){
+    [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
         switch (status) {
-            case PHAuthorizationStatusAuthorized:
-            {
+            case PHAuthorizationStatusAuthorized: {
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [self checkAssetsCount];
                 });
                 break;
             }
-            default:
-            {
+            default: {
                 dispatch_async(dispatch_get_main_queue(), ^{
                     [self showAccessDenied];
                 });
@@ -221,7 +210,7 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
 - (void)checkAssetsCount
 {
     PHFetchResult *fetchResult = [PHAsset fetchAssetsWithOptions:self.assetsFetchOptions];
-    
+
     if (fetchResult.count > 0) {
         [self showAssetCollectionViewController];
     } else {
@@ -251,13 +240,13 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
     CTAssetCollectionViewController *vc = [CTAssetCollectionViewController new];
     CTAssetsNavigationController *master = [[CTAssetsNavigationController alloc] initWithRootViewController:vc];
     UINavigationController *detail = [self emptyNavigationController];
-    UISplitViewController *svc  = [UISplitViewController new];
-    
+    UISplitViewController *svc = [UISplitViewController new];
+
     svc.delegate = self;
     svc.viewControllers = @[master, detail];
     svc.presentsWithGesture = NO;
     svc.preferredDisplayMode = UISplitViewControllerDisplayModeAllVisible;
-    
+
     [self addChildViewController:svc];
     svc.view.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
     [self.view addSubview:svc.view];
@@ -292,14 +281,12 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
 
 - (UIViewController *)emptyViewController
 {
-    UIViewController *vc                = [UIViewController new];
-    vc.view.backgroundColor             = [[UIColor whiteColor] adaptive];
-    vc.navigationItem.hidesBackButton   = YES;
- 
+    UIViewController *vc = [UIViewController new];
+    vc.view.backgroundColor = [[UIColor whiteColor] adaptive];
+    vc.navigationItem.hidesBackButton = YES;
+
     return vc;
 }
-
-
 
 
 #pragma mark - Show asset collection view controller
@@ -319,11 +306,11 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
 
     UIViewController *vc = [self emptyViewController];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
-    
+
     [vc.view addSubview:view];
     [view setNeedsUpdateConstraints];
     [view updateConstraintsIfNeeded];
-    
+
     [self setupButtonInViewController:vc];
     [self setupChildViewController:nav];
 }
@@ -349,8 +336,7 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
 
 - (void)setupButtonInViewController:(UIViewController *)viewController
 {
-    if (self.showsCancelButton)
-    {
+    if (self.showsCancelButton) {
         viewController.navigationItem.leftBarButtonItem =
         [[UIBarButtonItem alloc] initWithTitle:CTAssetsPickerLocalizedString(@"Cancel", nil)
                                          style:UIBarButtonItemStylePlain
@@ -385,8 +371,7 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
 {
-    if ([keyPath isEqual:@"selectedAssets"])
-    {
+    if ([keyPath isEqual:@"selectedAssets"]) {
         [self toggleDoneButton];
         [self postSelectedAssetsDidChangeNotification:[object valueForKey:keyPath]];
     }
@@ -406,24 +391,21 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
 }
 
 
-
 #pragma mark - Photo library changed
 
 - (void)photoLibraryDidChange:(PHChange *)changeInstance
 {
     // Call might come on any background queue. Re-dispatch to the main queue to handle it.
     dispatch_async(dispatch_get_main_queue(), ^{
-        
         NSMutableArray *deselectAssets = [NSMutableArray new];
-        
-        for (PHAsset *asset in self.selectedAssets)
-        {
+
+        for (PHAsset *asset in self.selectedAssets) {
             PHObjectChangeDetails *changeDetails = [changeInstance changeDetailsForObject:asset];
-    
+
             if (changeDetails.objectWasDeleted)
                 [deselectAssets addObject:asset];
         }
-        
+
         // Deselect asset if it was deleted from library
         for (PHAsset *asset in deselectAssets)
             [self deselectAsset:asset];
@@ -431,18 +413,16 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
 }
 
 
-
 #pragma mark - Toggle button
 
 - (void)toggleDoneButton
 {
     UIViewController *vc = self.childSplitViewController.viewControllers.firstObject;
-    
-    if ([vc isMemberOfClass:[UINavigationController class]])
-    {
+
+    if ([vc isMemberOfClass:[UINavigationController class]]) {
         BOOL enabled = (self.alwaysEnableDoneButton) ? YES : (self.selectedAssets.count > 0);
-        
-        for (UIViewController *viewController in ((UINavigationController *)vc).viewControllers)
+
+        for (UIViewController *viewController in ((UINavigationController *) vc).viewControllers)
             viewController.navigationItem.rightBarButtonItem.enabled = enabled;
     }
 }
@@ -473,7 +453,7 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
 
 - (UISplitViewController *)childSplitViewController
 {
-    return (UISplitViewController *)self.childViewControllers.firstObject;
+    return (UISplitViewController *) self.childViewControllers.firstObject;
 }
 
 
@@ -533,30 +513,30 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
 {
     if (self.selectedAssets.count == 0)
         return nil;
-    
+
     NSPredicate *photoPredicate = [self predicateOfMediaType:PHAssetMediaTypeImage];
     NSPredicate *videoPredicate = [self predicateOfMediaType:PHAssetMediaTypeVideo];
-    
+
     BOOL photoSelected = ([self.selectedAssets filteredArrayUsingPredicate:photoPredicate].count > 0);
     BOOL videoSelected = ([self.selectedAssets filteredArrayUsingPredicate:videoPredicate].count > 0);
-    
+
     NSString *format;
-    
+
     if (photoSelected && videoSelected)
         format = CTAssetsPickerLocalizedString(@"%@ Items Selected", nil);
-    
+
     else if (photoSelected)
         format = (self.selectedAssets.count > 1) ?
         CTAssetsPickerLocalizedString(@"%@ Photos Selected", nil) :
         CTAssetsPickerLocalizedString(@"%@ Photo Selected", nil);
-    
+
     else if (videoSelected)
         format = (self.selectedAssets.count > 1) ?
         CTAssetsPickerLocalizedString(@"%@ Videos Selected", nil) :
         CTAssetsPickerLocalizedString(@"%@ Video Selected", nil);
-    
+
     NSNumberFormatter *nf = [NSNumberFormatter new];
-    
+
     return [NSString stringWithFormat:format, [nf ctassetsPickerStringFromAssetsCount:self.selectedAssets.count]];
 }
 
@@ -586,15 +566,12 @@ NSString * const CTAssetsPickerDidDeselectAssetNotification = @"CTAssetsPickerDi
                                                  toViewController:(UIViewController *)toVC
 {
     if ((operation == UINavigationControllerOperationPush && [toVC isKindOfClass:[CTAssetsPageViewController class]]) ||
-        (operation == UINavigationControllerOperationPop && [fromVC isKindOfClass:[CTAssetsPageViewController class]]))
-    {
+        (operation == UINavigationControllerOperationPop && [fromVC isKindOfClass:[CTAssetsPageViewController class]])) {
         CTAssetsViewControllerTransition *transition = [[CTAssetsViewControllerTransition alloc] init];
         transition.operation = operation;
 
         return transition;
-    }
-    else
-    {
+    } else {
         return nil;
     }
 }

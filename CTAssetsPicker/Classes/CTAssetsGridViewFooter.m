@@ -25,12 +25,11 @@
  */
 
 #import <PureLayout/PureLayout.h>
-#import "CTAssetsPickerDefines.h"
 #import "CTAssetsGridViewFooter.h"
-#import "NSNumberFormatter+CTAssetsPickerController.h"
+#import "CTAssetsPickerDefines.h"
 #import "NSBundle+CTAssetsPickerController.h"
-#import "Categories/DarkMode/UIColor+SKDarkMode.h"
-
+#import "NSNumberFormatter+CTAssetsPickerController.h"
+#import "UIColor+SKDarkMode.h"
 
 
 @interface CTAssetsGridViewFooter ()
@@ -42,16 +41,11 @@
 @end
 
 
-
-
-
-
 @implementation CTAssetsGridViewFooter
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
-    if (self = [super initWithFrame:frame])
-    {
+    if (self = [super initWithFrame:frame]) {
         [self setupViews];
     }
 
@@ -102,8 +96,7 @@
 
 - (void)updateConstraints
 {
-    if (!self.didSetupConstraints)
-    {
+    if (!self.didSetupConstraints) {
         [self.label autoPinEdgesToSuperviewMargins];
 
         self.didSetupConstraints = YES;
@@ -118,7 +111,7 @@
 
     NSString *numberOfVideos = @"";
     NSString *numberOfPhotos = @"";
-
+    
     NSUInteger videoCount = [result countOfAssetsWithMediaType:PHAssetMediaTypeVideo];
     NSUInteger photoCount = [result countOfAssetsWithMediaType:PHAssetMediaTypeImage];
 

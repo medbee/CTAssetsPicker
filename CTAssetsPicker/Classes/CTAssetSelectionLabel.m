@@ -1,19 +1,19 @@
 /*
- 
+
  MIT License (MIT)
- 
+
  Copyright (c) 2015 Clement CN Tsang
- 
+
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
  in the Software without restriction, including without limitation the rights
  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  copies of the Software, and to permit persons to whom the Software is
  furnished to do so, subject to the following conditions:
- 
+
  The above copyright notice and this permission notice shall be included in
  all copies or substantial portions of the Software.
- 
+
  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -21,13 +21,13 @@
  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
- 
+
  */
 
 #import <PureLayout/PureLayout.h>
 #import "CTAssetSelectionLabel.h"
 #import "CTAssetsPickerDefines.h"
-#import "Categories/DarkMode/UIColor+SKDarkMode.h"
+#import "UIColor+SKDarkMode.h"
 
 /**
  *  The label to show selection index.
@@ -71,9 +71,8 @@
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
-    
-    if (self)
-    {
+
+    if (self) {
         self.textAlignment = NSTextAlignmentCenter;
         self.font = CTAssetLabelFont;
         self.textColor = CTAssetLabelTextColor;
@@ -82,7 +81,7 @@
         self.layer.masksToBounds = YES;
         self.isAccessibilityElement = NO;
     }
-    
+
     return self;
 }
 
@@ -129,8 +128,9 @@
     }
 
     [self removeConstraints:self.sizeConstraints];
-    
-    [NSLayoutConstraint autoSetPriority:UILayoutPriorityRequired forConstraints:^{
+
+    [NSLayoutConstraint autoSetPriority:UILayoutPriorityRequired
+                         forConstraints:^{
         self.sizeConstraints = [self autoSetDimensionsToSize:size];
     }];
 }
@@ -175,8 +175,8 @@
              @"Horizontal edge must be NSLayoutAttributeTop or NSLayoutAttributeBottom");
 
     [self.superview removeConstraints:@[self.verticalConstraint, self.horizontalConstraint]];
-    self.verticalConstraint   = [self autoPinEdgeToSuperviewEdge:(ALEdge)edgeX withInset:margin];
-    self.horizontalConstraint = [self autoPinEdgeToSuperviewEdge:(ALEdge)edgeY withInset:margin];
+    self.verticalConstraint = [self autoPinEdgeToSuperviewEdge:(ALEdge) edgeX withInset:margin];
+    self.horizontalConstraint = [self autoPinEdgeToSuperviewEdge:(ALEdge) edgeY withInset:margin];
 }
 
 /**
@@ -188,7 +188,7 @@
  */
 - (void)setTextAttributes:(NSDictionary *)textAttributes
 {
-    self.font  = (textAttributes) ? textAttributes[NSFontAttributeName] : CTAssetLabelFont;
+    self.font = (textAttributes) ? textAttributes[NSFontAttributeName] : CTAssetLabelFont;
     self.textColor = (textAttributes) ? textAttributes[NSForegroundColorAttributeName] : CTAssetLabelTextColor;
     self.backgroundColor = (textAttributes) ? textAttributes[NSBackgroundColorAttributeName] : CTAssetLabelBackgroundColor;
 }
@@ -201,18 +201,18 @@
  */
 - (void)updateConstraints
 {
-    if (!self.didSetupConstraints)
-    {
-        [NSLayoutConstraint autoSetPriority:UILayoutPriorityRequired forConstraints:^{
+    if (!self.didSetupConstraints) {
+        [NSLayoutConstraint autoSetPriority:UILayoutPriorityRequired
+                             forConstraints:^{
             self.sizeConstraints = [self autoSetDimensionsToSize:CTAssetLabelSize];
         }];
 
-        self.verticalConstraint   = [self autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:0];
+        self.verticalConstraint = [self autoPinEdgeToSuperviewEdge:ALEdgeRight withInset:0];
         self.horizontalConstraint = [self autoPinEdgeToSuperviewEdge:ALEdgeBottom withInset:0];
-        
+
         self.didSetupConstraints = YES;
     }
-    
+
     [super updateConstraints];
 }
 

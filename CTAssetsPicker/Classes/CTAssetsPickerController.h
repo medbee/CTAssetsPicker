@@ -25,8 +25,8 @@
  */
 
 
-#import <UIKit/UIKit.h>
 #import <Photos/Photos.h>
+#import <UIKit/UIKit.h>
 
 
 NS_ASSUME_NONNULL_BEGIN
@@ -36,12 +36,12 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  *  A controller that allows picking multiple photos and videos from user's photo library.
  */
-@interface CTAssetsPickerController : UIViewController
+@interface CTAssetsPickerController: UIViewController
 
 /**
  *  The assets picker’s delegate object.
  */
-@property (nonatomic, weak) id <CTAssetsPickerControllerDelegate> delegate;
+@property (nonatomic, weak) id<CTAssetsPickerControllerDelegate> delegate;
 
 /**
  *  Set the `assetCollectionSubtypes` to specify which asset collections (albums) to be shown in the picker.
@@ -49,7 +49,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  You can specify which albums and their order to be shown in the picker by creating an `NSArray` of `NSNumber`
  *  that containing the value of `PHAssetCollectionSubtype`.
  */
-@property (nonatomic, copy) NSArray<NSNumber*> *assetCollectionSubtypes;
+@property (nonatomic, copy) NSArray<NSNumber *> *assetCollectionSubtypes;
 
 /**
  *  Set the `defaultAssetCollection` to specify which asset collection (album) is the default asset collection.
@@ -196,7 +196,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @see assetsPickerControllerDidCancel:
  */
-- (void)assetsPickerController:(CTAssetsPickerController *)picker didFinishPickingAssets:(NSArray<PHAsset*> *)assets;
+- (void)assetsPickerController:(CTAssetsPickerController *)picker didFinishPickingAssets:(NSArray<PHAsset *> *)assets;
 
 @optional
 
@@ -304,7 +304,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)assetsPickerController:(CTAssetsPickerController *)picker didDeselectAsset:(PHAsset *)asset;
 
 
-
 /**
  *  @name Managing Asset Highlighting
  */
@@ -341,8 +340,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)assetsPickerController:(CTAssetsPickerController *)picker didUnhighlightAsset:(PHAsset *)asset;
 
 
-
-
 /**
  *  @name Notifications
  */
@@ -352,21 +349,21 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  The notification’s `object` is an `NSArray` object of selected assets
  */
-extern NSString * const CTAssetsPickerSelectedAssetsDidChangeNotification;
+extern NSString *const CTAssetsPickerSelectedAssetsDidChangeNotification;
 
 /**
  *  Sent when asset is selected
  *
  *  The notification’s `object` is a `PHAsset` that is selected
  */
-extern NSString * const CTAssetsPickerDidSelectAssetNotification;
+extern NSString *const CTAssetsPickerDidSelectAssetNotification;
 
 /**
  *  Sent when asset is deselected
  *
  *  The notification’s `object` is a `PHAsset` that is deselected
  */
-extern NSString * const CTAssetsPickerDidDeselectAssetNotification;
+extern NSString *const CTAssetsPickerDidDeselectAssetNotification;
 
 
 @end

@@ -26,11 +26,11 @@
 
 #import <PureLayout/PureLayout.h>
 #import "CTAssetsPickerDefines.h"
-#import "CTAssetThumbnailView.h"
 #import "CTAssetThumbnailOverlay.h"
-#import "PHAsset+CTAssetsPickerController.h"
+#import "CTAssetThumbnailView.h"
 #import "NSDateFormatter+CTAssetsPickerController.h"
-#import "Categories/DarkMode/UIColor+SKDarkMode.h"
+#import "PHAsset+CTAssetsPickerController.h"
+#import "UIColor+SKDarkMode.h"
 
 
 @interface CTAssetThumbnailView ()
@@ -44,16 +44,14 @@
 @end
 
 
-
 @implementation CTAssetThumbnailView
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
-    if (self = [super initWithFrame:frame])
-    {
-        _showsDuration              = YES;
-        self.opaque                 = YES;
-        self.clipsToBounds          = YES;
+    if (self = [super initWithFrame:frame]) {
+        _showsDuration = YES;
+        self.opaque = YES;
+        self.clipsToBounds = YES;
         self.isAccessibilityElement = NO;
         
         [self setupViews];
@@ -93,7 +91,7 @@
 
 #pragma markt - Override set bounds
 
--(void)setBounds:(CGRect)bounds
+- (void)setBounds:(CGRect)bounds
 {
     super.bounds = bounds;
     
@@ -106,8 +104,7 @@
 
 - (void)updateConstraints
 {
-    if (!self.didSetupConstraints)
-    {
+    if (!self.didSetupConstraints) {
         [self.backgroundView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero];
         [self.imageView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero];
         
@@ -132,29 +129,26 @@
 
 - (void)setupOverlayForAsset:(PHAsset *)asset
 {
-    if (asset.ctassetsPickerIsVideo)
-    {
+    if (asset.ctassetsPickerIsVideo) {
         if (!self.overlay) {
             self.overlay = [[CTAssetThumbnailOverlay alloc] initWithFrame:self.bounds];
             [self addSubview:self.overlay];
         }
         
         NSString *duration = nil;
-
-        if (self.showsDuration)
-        {
+        
+        if (self.showsDuration) {
             NSDateFormatter *df = [NSDateFormatter new];
             duration = [df ctassetsPickerStringFromTimeInterval:asset.duration];
         }
-    
+        
         [self.overlay bind:asset duration:duration];
     }
     
-    else
-    {
+    else {
         [self.overlay removeFromSuperview];
         self.overlay = nil;
-    }        
+    }
 }
 
 
@@ -174,8 +168,7 @@
 - (void)setupOverlayForAssetCollection:(PHAssetCollection *)assetCollection
 {
     if (assetCollection.assetCollectionType == PHAssetCollectionTypeSmartAlbum &&
-        assetCollection.assetCollectionSubtype != PHAssetCollectionSubtypeSmartAlbumAllHidden)
-    {
+        assetCollection.assetCollectionSubtype != PHAssetCollectionSubtypeSmartAlbumAllHidden) {
         if (!self.overlay) {
             self.overlay = [[CTAssetThumbnailOverlay alloc] initWithFrame:self.bounds];
             [self addSubview:self.overlay];
@@ -184,13 +177,11 @@
         [self.overlay bind:assetCollection];
     }
     
-    else
-    {
+    else {
         [self.overlay removeFromSuperview];
         self.overlay = nil;
     }
 }
-
 
 
 @end

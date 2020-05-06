@@ -26,6 +26,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 @interface UICollectionView (CTAssetsPickerController)
 
 - (NSArray *)ctassetsPickerIndexPathsForElementsInRect:(CGRect)rect;

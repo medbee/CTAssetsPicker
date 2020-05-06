@@ -1,19 +1,19 @@
 /*
- 
+
  MIT License (MIT)
- 
+
  Copyright (c) 2015 Clement CN Tsang
- 
+
  Permission is hereby granted, free of charge, to any person obtaining a copy
  of this software and associated documentation files (the "Software"), to deal
  in the Software without restriction, including without limitation the rights
  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  copies of the Software, and to permit persons to whom the Software is
  furnished to do so, subject to the following conditions:
- 
+
  The above copyright notice and this permission notice shall be included in
  all copies or substantial portions of the Software.
- 
+
  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -21,16 +21,16 @@
  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  THE SOFTWARE.
- 
+
  */
 
 #import <PureLayout/PureLayout.h>
-#import "CTAssetsPickerDefines.h"
 #import "CTAssetCollectionViewCell.h"
+#import "CTAssetsPickerDefines.h"
 #import "NSBundle+CTAssetsPickerController.h"
-#import "UIImage+CTAssetsPickerController.h"
 #import "NSNumberFormatter+CTAssetsPickerController.h"
-#import "Categories/DarkMode/UIColor+SKDarkMode.h"
+#import "UIColor+SKDarkMode.h"
+#import "UIImage+CTAssetsPickerController.h"
 
 
 @interface CTAssetCollectionViewCell ()
@@ -50,34 +50,30 @@
 @end
 
 
-
-
-
 @implementation CTAssetCollectionViewCell
 
 - (instancetype)initWithThumbnailSize:(CGSize)size reuseIdentifier:(NSString *)reuseIdentifier;
 {
-    if (self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier])
-    {
+    if (self = [super initWithStyle:UITableViewCellStyleDefault reuseIdentifier:reuseIdentifier]) {
         _thumbnailSize = size;
-        
-        _titleTextColor         = CTAssetCollectionViewCellTitleTextColor;
+
+        _titleTextColor = CTAssetCollectionViewCellTitleTextColor;
         _selectedTitleTextColor = CTAssetCollectionViewCellTitleTextColor;
-        _countTextColor         = CTAssetCollectionViewCellCountTextColor;
+        _countTextColor = CTAssetCollectionViewCellCountTextColor;
         _selectedCountTextColor = CTAssetCollectionViewCellCountTextColor;
 
-        _accessoryColor         = CTAssetCollectionViewCellAccessoryColor;
+        _accessoryColor = CTAssetCollectionViewCellAccessoryColor;
         _selectedAccessoryColor = CTAssetCollectionViewCellAccessoryColor;
 
-        self.opaque                             = YES;
-        self.isAccessibilityElement             = YES;
-        self.textLabel.backgroundColor          = self.backgroundColor;
-        self.detailTextLabel.backgroundColor    = self.backgroundColor;
-        self.accessoryType                      = UITableViewCellAccessoryNone;
-        
+        self.opaque = YES;
+        self.isAccessibilityElement = YES;
+        self.textLabel.backgroundColor = self.backgroundColor;
+        self.detailTextLabel.backgroundColor = self.backgroundColor;
+        self.accessoryType = UITableViewCellAccessoryNone;
+
         [self setupViews];
     }
-    
+
     return self;
 }
 
@@ -88,25 +84,25 @@
     CTAssetThumbnailStacks *thumbnailStacks = [CTAssetThumbnailStacks newAutoLayoutView];
     thumbnailStacks.thumbnailSize = self.thumbnailSize;
     self.thumbnailStacks = thumbnailStacks;
-    
+
     UILabel *titleLabel = [UILabel newAutoLayoutView];
     titleLabel.font = CTAssetCollectionViewCellTitleFont;
     titleLabel.textColor = self.titleTextColor;
     self.titleLabel = titleLabel;
-    
+
     UILabel *countLabel = [UILabel newAutoLayoutView];
     countLabel.font = CTAssetCollectionViewCellCountFont;
     countLabel.textColor = self.countTextColor;
     self.countLabel = countLabel;
-    
+
     UIView *labelsView = [UIView newAutoLayoutView];
     [labelsView addSubview:self.titleLabel];
     [labelsView addSubview:self.countLabel];
     self.labelsView = labelsView;
-    
+
     [self.contentView addSubview:self.thumbnailStacks];
     [self.contentView addSubview:self.labelsView];
-    
+
     UIImage *accessory = [UIImage ctassetsPickerImageNamed:@"DisclosureArrow"];
     accessory = [accessory imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
     UIImageView *accessoryView = [[UIImageView alloc] initWithImage:accessory];
@@ -119,9 +115,8 @@
     NSString *imageName = [self placeHolderImageNameOfCollectionSubtype:self.collection.assetCollectionSubtype];
     UIImage *image = [UIImage ctassetsPickerImageNamed:imageName];
     image = [image imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
-    
-    for (CTAssetThumbnailView *thumbnailView in self.thumbnailStacks.thumbnailViews)
-    {
+
+    for (CTAssetThumbnailView *thumbnailView in self.thumbnailStacks.thumbnailViews) {
         [thumbnailView bind:nil assetCollection:nil];
         thumbnailView.backgroundImage = image;
     }
@@ -131,13 +126,13 @@
 {
     if (subtype == PHAssetCollectionSubtypeSmartAlbumUserLibrary)
         return @"GridEmptyCameraRoll";
-    
+
     else if (subtype == PHAssetCollectionSubtypeSmartAlbumAllHidden)
         return @"GridHiddenAlbum";
-    
+
     else if (subtype == PHAssetCollectionSubtypeAlbumCloudShared)
         return @"GridEmptyAlbumShared";
-    
+
     else
         return @"GridEmptyAlbum";
 }
@@ -212,8 +207,7 @@
 {
     if (!selectedBackgroundColor)
         self.selectedBackgroundView = nil;
-    else
-    {
+    else {
         UIView *view = [UIView new];
         view.backgroundColor = [selectedBackgroundColor adaptive];
         self.selectedBackgroundView = view;
@@ -227,7 +221,7 @@
 {
     [super setHighlighted:highlighted animated:animated];
     [self.thumbnailStacks setHighlighted:highlighted];
-    
+
     self.titleLabel.textColor = (highlighted) ? self.selectedTitleTextColor : self.titleTextColor;
     self.countLabel.textColor = (highlighted) ? self.selectedCountTextColor : self.countTextColor;
     self.accessoryView.tintColor = (highlighted) ? self.selectedAccessoryColor : self.accessoryColor;
@@ -237,7 +231,7 @@
 {
     [super setSelected:selected animated:animated];
     [self.thumbnailStacks setHighlighted:selected];
-    
+
     self.titleLabel.textColor = (selected) ? self.selectedTitleTextColor : self.titleTextColor;
     self.countLabel.textColor = (selected) ? self.selectedCountTextColor : self.countTextColor;
     self.accessoryView.tintColor = (selected) ? self.selectedAccessoryColor : self.accessoryColor;
@@ -247,27 +241,28 @@
 
 - (void)updateConstraints
 {
-    if (!self.didSetupConstraints)
-    {
+    if (!self.didSetupConstraints) {
         CGSize size = self.thumbnailSize;
         CGFloat top = self.thumbnailStacks.edgeInsets.top;
         size.height += top;
-        
-        [NSLayoutConstraint autoSetPriority:UILayoutPriorityRequired forConstraints:^{
+
+        [NSLayoutConstraint autoSetPriority:UILayoutPriorityRequired
+                             forConstraints:^{
             [self.thumbnailStacks autoSetDimensionsToSize:size];
         }];
-                
-        [NSLayoutConstraint autoSetPriority:UILayoutPriorityDefaultHigh forConstraints:^{
+
+        [NSLayoutConstraint autoSetPriority:UILayoutPriorityDefaultHigh
+                             forConstraints:^{
             [self.thumbnailStacks autoPinEdgesToSuperviewMarginsExcludingEdge:ALEdgeTrailing];
         }];
-        
+
         [self.labelsView autoAlignAxisToSuperviewAxis:ALAxisHorizontal];
         [self.labelsView autoPinEdge:ALEdgeLeading
                               toEdge:ALEdgeTrailing
                               ofView:self.thumbnailStacks
                           withOffset:self.labelsView.layoutMargins.left
                             relation:NSLayoutRelationGreaterThanOrEqual];
-        
+
         [self.titleLabel autoPinEdgesToSuperviewMarginsExcludingEdge:ALEdgeBottom];
         [self.countLabel autoPinEdgesToSuperviewMarginsExcludingEdge:ALEdgeTop];
         [self.countLabel autoPinEdge:ALEdgeTop
@@ -275,10 +270,10 @@
                               ofView:self.titleLabel
                           withOffset:self.countLabel.layoutMargins.top
                             relation:NSLayoutRelationGreaterThanOrEqual];
-        
+
         self.didSetupConstraints = YES;
     }
-    
+
     [super updateConstraints];
 }
 
@@ -288,18 +283,17 @@
 - (void)bind:(PHAssetCollection *)collection count:(NSUInteger)count
 {
     self.collection = collection;
-    self.count      = count;
-    
+    self.count = count;
+
     [self setupPlaceholderImage];
 
     self.titleLabel.text = collection.localizedTitle;
-    
-    if (count != NSNotFound)
-    {
+
+    if (count != NSNotFound) {
         NSNumberFormatter *nf = [NSNumberFormatter new];
         self.countLabel.text = [nf ctassetsPickerStringFromAssetsCount:count];
     }
-    
+
     [self setNeedsUpdateConstraints];
     [self updateConstraintsIfNeeded];
 }
@@ -311,7 +305,7 @@
 {
     NSString *title = self.titleLabel.text;
     NSString *count = [NSString stringWithFormat:CTAssetsPickerLocalizedString(@"%@ Photos", nil), self.countLabel.text];
-    
+
     NSArray *labels = @[title, count];
     return [labels componentsJoinedByString:@","];
 }
