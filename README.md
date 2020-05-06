@@ -10,6 +10,14 @@ as it's needed in the Medbee app. Currently following features where added:
 
 To add carthage support a framework target was created. Because the header file CTAssetsPickerController.h would clash with the umbrealla header the project was renamed to CTAssetsPicker.
 
+### Note
+Because iOS does not support umbrealla frameworks (frameworks embedded in each other) another Framework must be included externally. Do this by adding both lines to your cartfile.
+
+```
+github "PureLayout/PureLayout"
+github "medbee/MDBAssetsPicker"
+```
+
 
 ## Development Suspended (1 June, 2016)
 
