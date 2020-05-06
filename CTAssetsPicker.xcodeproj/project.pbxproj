@@ -40,7 +40,7 @@
 		CD01D0DE2462DB970007CEA6 /* CTAssetsPickerDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = CD01D0AD2462DB970007CEA6 /* CTAssetsPickerDefines.h */; };
 		CD01D0DF2462DB970007CEA6 /* CTAssetsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD01D0AE2462DB970007CEA6 /* CTAssetsNavigationController.m */; };
 		CD01D0E02462DB970007CEA6 /* CTAssetCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = CD01D0AF2462DB970007CEA6 /* CTAssetCollectionViewCell.h */; };
-		CD01D0E12462DB970007CEA6 /* CTAssetsPickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = CD01D0B02462DB970007CEA6 /* CTAssetsPickerController.h */; };
+		CD01D0E12462DB970007CEA6 /* CTAssetsPickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = CD01D0B02462DB970007CEA6 /* CTAssetsPickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD01D0E22462DB970007CEA6 /* CTAssetsGridViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CD01D0B12462DB970007CEA6 /* CTAssetsGridViewLayout.m */; };
 		CD01D0E32462DB970007CEA6 /* CTAssetThumbnailView.h in Headers */ = {isa = PBXBuildFile; fileRef = CD01D0B22462DB970007CEA6 /* CTAssetThumbnailView.h */; };
 		CD01D0E42462DB970007CEA6 /* CTAssetCheckmark.h in Headers */ = {isa = PBXBuildFile; fileRef = CD01D0B32462DB970007CEA6 /* CTAssetCheckmark.h */; };
@@ -516,6 +516,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDBF499E245053FC00F8584F /* CTAssetsPicker.h in Headers */,
+				CD01D0E12462DB970007CEA6 /* CTAssetsPickerController.h in Headers */,
 				CDEC7BAA24503459009B13DF /* UIImage+CTAssetsPickerController.h in Headers */,
 				CD01D0E32462DB970007CEA6 /* CTAssetThumbnailView.h in Headers */,
 				CD01D0F42462DB970007CEA6 /* CTAssetsGridViewCell.h in Headers */,
@@ -540,7 +541,6 @@
 				CDEC7B9D24503458009B13DF /* UICollectionView+CTAssetsPickerController.h in Headers */,
 				CDEC7BAF24503459009B13DF /* NSBundle+CTAssetsPickerController.h in Headers */,
 				CD01D0F82462DB970007CEA6 /* CTAssetsGridViewLayout.h in Headers */,
-				CD01D0E12462DB970007CEA6 /* CTAssetsPickerController.h in Headers */,
 				CD01D0DE2462DB970007CEA6 /* CTAssetsPickerDefines.h in Headers */,
 				CD01D1002462DB970007CEA6 /* CTAssetsGridView.h in Headers */,
 				CD01D0FE2462DB970007CEA6 /* CTAssetCollectionViewController.h in Headers */,
