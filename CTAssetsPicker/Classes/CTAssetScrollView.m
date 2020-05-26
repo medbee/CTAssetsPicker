@@ -105,9 +105,14 @@ NSString *const CTAssetScrollViewPlayerWillPauseNotification = @"CTAssetScrollVi
     self.progressView = progressView;
     [self addSubview:self.progressView];
 
-    UIActivityIndicatorView *activityView =
-    [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleLarge];
-    self.activityView = activityView;
+    if (@available(iOS 13.0, *)) {
+        UIActivityIndicatorView *activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleLarge];
+        self.activityView = activityView;
+    } else {
+        UIActivityIndicatorView *activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+        self.activityView = activityView;
+
+    }
     [self addSubview:self.activityView];
 
     CTAssetPlayButton *playButton = [CTAssetPlayButton newAutoLayoutView];
