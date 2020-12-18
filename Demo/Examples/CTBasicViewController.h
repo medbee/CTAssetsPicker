@@ -25,11 +25,10 @@
  */
 
 #import <UIKit/UIKit.h>
-#import <CTAssetsPicker/CTAssetsPickerController.h>
-#import <CTAssetsPicker/CTAssetsPageViewController.h>
+#import <CTAssetsPicker/CTAssetsPicker.h>
 
-@interface CTBasicViewController : UITableViewController
-<CTAssetsPickerControllerDelegate>
+
+@interface CTBasicViewController : UITableViewController <CTAssetsPickerControllerDelegate>
 
 @property (nonatomic, copy) NSArray *assets;
 @property (nonatomic, strong) NSDateFormatter *dateFormatter;

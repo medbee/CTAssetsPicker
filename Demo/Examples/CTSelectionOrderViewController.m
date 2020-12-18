@@ -27,7 +27,7 @@
 #import "CTSelectionOrderViewController.h"
 
 // import headers that need to be customised
-#import <CTAssetsPicker/CTAssetsGridSelectedView.h>
+#import <CTAssetsPicker/CTAssetsPicker.h>
 
 
 

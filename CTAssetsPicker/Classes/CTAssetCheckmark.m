@@ -81,13 +81,11 @@
 - (instancetype)initWithFrame:(CGRect)frame
 {
     self = [super initWithFrame:frame];
-
     if (self) {
         self.userInteractionEnabled = NO;
         self.isAccessibilityElement = NO;
         [self setupViews];
     }
-
     return self;
 }
 

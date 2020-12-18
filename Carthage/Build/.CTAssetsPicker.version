@@ -1,0 +1,17 @@
+{
+  "commitish" : "ba8e30d54ca765922b4e3461f735b716ddb9061e",
+  "iOS" : [
+    {
+      "hash" : "f03e5b762eebea4d7773b71bc5563c427c3cb0f6e958e73e44126018ae9bd62d",
+      "name" : "CTAssetsPicker",
+      "container" : "CTAssetsPicker.xcframework",
+      "identifier" : "ios-arm64"
+    },
+    {
+      "hash" : "de1225138ba53dca151056dd5d859a59e178eaefe9aa36a3a4a92fdc3fba3e0c",
+      "name" : "CTAssetsPicker",
+      "container" : "CTAssetsPicker.xcframework",
+      "identifier" : "ios-arm64_x86_64-simulator"
+    }
+  ]
+}

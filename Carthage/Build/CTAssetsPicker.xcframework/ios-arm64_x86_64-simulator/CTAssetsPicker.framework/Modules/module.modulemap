@@ -1,0 +1,6 @@
+framework module CTAssetsPicker {
+  umbrella header "CTAssetsPicker.h"
+
+  export *
+  module * { export * }
+}

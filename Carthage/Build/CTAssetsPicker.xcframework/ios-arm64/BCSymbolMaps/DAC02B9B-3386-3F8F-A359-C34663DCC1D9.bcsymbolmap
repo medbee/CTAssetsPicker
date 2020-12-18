@@ -1,0 +1,1720 @@
+BCSymbolMap Version: 2.0
+Apple clang version 12.0.0 (clang-1200.0.32.28)
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.3.sdk
+iPhoneOS14.3.sdk
+/Users/patrick/Library/Developer/Xcode/DerivedData/CTAssetsPicker-garvrozetpexktgntokltuavxclw/Build/Intermediates.noindex/ArchiveIntermediates/CTAssetsPicker/IntermediateBuildFilesPath/CTAssetsPicker.build/Release-iphoneos/CTAssetsPicker.build/DerivedSources/CTAssetsPicker_vers.c
+/Users/patrick/Developer/CTAssetsPicker
+-[NSIndexSet(CTAssetsPickerController) ctassetsPickerIndexPathsFromIndexesWithSection:]
+___87-[NSIndexSet(CTAssetsPickerController) ctassetsPickerIndexPathsFromIndexesWithSection:]_block_invoke
+___copy_helper_block_e8_32s
+___destroy_helper_block_e8_32s
+_OBJC_CLASSLIST_REFERENCES_$_
+_OBJC_SELECTOR_REFERENCES_
+_OBJC_SELECTOR_REFERENCES_.2
+_OBJC_CLASSLIST_REFERENCES_$_.3
+_OBJC_SELECTOR_REFERENCES_.5
+_OBJC_SELECTOR_REFERENCES_.7
+___block_descriptor_48_e8_32s_e12_v24?0Q8^B16l
+_OBJC_SELECTOR_REFERENCES_.9
+__OBJC_$_CATEGORY_INSTANCE_METHODS_NSIndexSet_$_CTAssetsPickerController
+__OBJC_$_CATEGORY_NSIndexSet_$_CTAssetsPickerController
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Categories/NSIndexSet+CTAssetsPickerController.m
+__destroy_helper_block_e8_32s
+__copy_helper_block_e8_32s
+__87-[NSIndexSet(CTAssetsPickerController) ctassetsPickerIndexPathsFromIndexesWithSection:]_block_invoke
+CTAssetsPicker/Categories/NSIndexSet+CTAssetsPickerController.m
++[NSBundle(CTAssetsPickerController) ctassetsPickerBundle]
+_OBJC_CLASSLIST_REFERENCES_$_.1
+_OBJC_SELECTOR_REFERENCES_.3
+__OBJC_$_CATEGORY_CLASS_METHODS_NSBundle_$_CTAssetsPickerController
+__OBJC_$_CATEGORY_NSBundle_$_CTAssetsPickerController
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Categories/NSBundle+CTAssetsPickerController.m
+CTAssetsPicker/Categories/NSBundle+CTAssetsPickerController.m
+-[CTAssetsPageView initWithFrame:]
+-[CTAssetsPageView setupViews]
+-[CTAssetsPageView setPageBackgroundColor:]
+-[CTAssetsPageView setFullscreenBackgroundColor:]
+-[CTAssetsPageView updateConstraints]
+-[CTAssetsPageView enterFullscreen]
+___35-[CTAssetsPageView enterFullscreen]_block_invoke
+-[CTAssetsPageView exitFullscreen]
+___34-[CTAssetsPageView exitFullscreen]_block_invoke
+-[CTAssetsPageView pageBackgroundColor]
+-[CTAssetsPageView fullscreenBackgroundColor]
+-[CTAssetsPageView didSetupConstraints]
+-[CTAssetsPageView setDidSetupConstraints:]
+-[CTAssetsPageView .cxx_destruct]
+_OBJC_SELECTOR_REFERENCES_.4
+_OBJC_IVAR_$_CTAssetsPageView._pageBackgroundColor
+_OBJC_SELECTOR_REFERENCES_.6
+_OBJC_IVAR_$_CTAssetsPageView._fullscreenBackgroundColor
+_OBJC_SELECTOR_REFERENCES_.8
+_OBJC_SELECTOR_REFERENCES_.10
+_OBJC_SELECTOR_REFERENCES_.12
+_OBJC_SELECTOR_REFERENCES_.14
+_OBJC_SELECTOR_REFERENCES_.16
+_OBJC_SELECTOR_REFERENCES_.18
+_OBJC_SELECTOR_REFERENCES_.20
+_OBJC_CLASSLIST_REFERENCES_$_.21
+_OBJC_SELECTOR_REFERENCES_.23
+___block_descriptor_40_e8_32s_e5_v8?0l
+_OBJC_SELECTOR_REFERENCES_.25
+_OBJC_IVAR_$_CTAssetsPageView._didSetupConstraints
+__OBJC_METACLASS_RO_$_CTAssetsPageView
+__OBJC_$_INSTANCE_METHODS_CTAssetsPageView
+__OBJC_$_INSTANCE_VARIABLES_CTAssetsPageView
+__OBJC_$_PROP_LIST_CTAssetsPageView
+__OBJC_CLASS_RO_$_CTAssetsPageView
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetsPageView.m
+CTAssetsPicker/Classes/CTAssetsPageView.m
+CTAssetsPicker/Classes/CTAssetsPageView.h
+__34-[CTAssetsPageView exitFullscreen]_block_invoke
+__35-[CTAssetsPageView enterFullscreen]_block_invoke
+-[CTAssetsPickerController initWithNibName:bundle:]
+-[CTAssetsPickerController viewDidLoad]
+-[CTAssetsPickerController dealloc]
+-[CTAssetsPickerController childViewControllerForStatusBarStyle]
+-[CTAssetsPickerController childViewControllerForStatusBarHidden]
+-[CTAssetsPickerController initAssetCollectionSubtypes]
+-[CTAssetsPickerController initThumbnailRequestOptions]
+-[CTAssetsPickerController checkAuthorizationStatus]
+-[CTAssetsPickerController requestAuthorizationStatus]
+___54-[CTAssetsPickerController requestAuthorizationStatus]_block_invoke
+___54-[CTAssetsPickerController requestAuthorizationStatus]_block_invoke_2
+___54-[CTAssetsPickerController requestAuthorizationStatus]_block_invoke.82
+-[CTAssetsPickerController checkAssetsCount]
+-[CTAssetsPickerController setupViews]
+-[CTAssetsPickerController setupEmptyViewController]
+-[CTAssetsPickerController setupSplitViewController]
+-[CTAssetsPickerController setupChildViewController:]
+-[CTAssetsPickerController removeChildViewController]
+-[CTAssetsPickerController emptyNavigationController]
+-[CTAssetsPickerController emptyViewController]
+-[CTAssetsPickerController showAssetCollectionViewController]
+-[CTAssetsPickerController showAuxiliaryView:]
+-[CTAssetsPickerController showAccessDenied]
+-[CTAssetsPickerController showNoAssets]
+-[CTAssetsPickerController setupButtonInViewController:]
+-[CTAssetsPickerController addKeyValueObserver]
+-[CTAssetsPickerController removeKeyValueObserver]
+-[CTAssetsPickerController observeValueForKeyPath:ofObject:change:context:]
+-[CTAssetsPickerController registerChangeObserver]
+-[CTAssetsPickerController unregisterChangeObserver]
+-[CTAssetsPickerController photoLibraryDidChange:]
+___50-[CTAssetsPickerController photoLibraryDidChange:]_block_invoke
+___copy_helper_block_e8_32s40s
+___destroy_helper_block_e8_32s40s
+-[CTAssetsPickerController toggleDoneButton]
+-[CTAssetsPickerController postSelectedAssetsDidChangeNotification:]
+-[CTAssetsPickerController postDidSelectAssetNotification:]
+-[CTAssetsPickerController postDidDeselectAssetNotification:]
+-[CTAssetsPickerController childSplitViewController]
+-[CTAssetsPickerController countOfSelectedAssets]
+-[CTAssetsPickerController objectInSelectedAssetsAtIndex:]
+-[CTAssetsPickerController insertObject:inSelectedAssetsAtIndex:]
+-[CTAssetsPickerController removeObjectFromSelectedAssetsAtIndex:]
+-[CTAssetsPickerController replaceObjectInSelectedAssetsAtIndex:withObject:]
+-[CTAssetsPickerController selectAsset:]
+-[CTAssetsPickerController deselectAsset:]
+-[CTAssetsPickerController predicateOfMediaType:]
+___49-[CTAssetsPickerController predicateOfMediaType:]_block_invoke
+-[CTAssetsPickerController selectedAssetsString]
+-[CTAssetsPickerController imageSizeForContainerSize:]
+-[CTAssetsPickerController splitViewController:collapseSecondaryViewController:ontoPrimaryViewController:]
+-[CTAssetsPickerController navigationController:animationControllerForOperation:fromViewController:toViewController:]
+-[CTAssetsPickerController dismiss:]
+-[CTAssetsPickerController finishPickingAssets:]
+-[CTAssetsPickerController delegate]
+-[CTAssetsPickerController setDelegate:]
+-[CTAssetsPickerController assetCollectionSubtypes]
+-[CTAssetsPickerController setAssetCollectionSubtypes:]
+-[CTAssetsPickerController defaultAssetCollection]
+-[CTAssetsPickerController setDefaultAssetCollection:]
+-[CTAssetsPickerController assetCollectionFetchOptions]
+-[CTAssetsPickerController setAssetCollectionFetchOptions:]
+-[CTAssetsPickerController assetsFetchOptions]
+-[CTAssetsPickerController setAssetsFetchOptions:]
+-[CTAssetsPickerController selectedAssets]
+-[CTAssetsPickerController setSelectedAssets:]
+-[CTAssetsPickerController doneButtonTitle]
+-[CTAssetsPickerController setDoneButtonTitle:]
+-[CTAssetsPickerController showsCancelButton]
+-[CTAssetsPickerController setShowsCancelButton:]
+-[CTAssetsPickerController showsEmptyAlbums]
+-[CTAssetsPickerController setShowsEmptyAlbums:]
+-[CTAssetsPickerController showsNumberOfAssets]
+-[CTAssetsPickerController setShowsNumberOfAssets:]
+-[CTAssetsPickerController alwaysEnableDoneButton]
+-[CTAssetsPickerController setAlwaysEnableDoneButton:]
+-[CTAssetsPickerController showsSelectionIndex]
+-[CTAssetsPickerController setShowsSelectionIndex:]
+-[CTAssetsPickerController shouldCollapseDetailViewController]
+-[CTAssetsPickerController setShouldCollapseDetailViewController:]
+-[CTAssetsPickerController assetCollectionThumbnailSize]
+-[CTAssetsPickerController setAssetCollectionThumbnailSize:]
+-[CTAssetsPickerController assetThumbnailSize]
+-[CTAssetsPickerController setAssetThumbnailSize:]
+-[CTAssetsPickerController thumbnailRequestOptions]
+-[CTAssetsPickerController setThumbnailRequestOptions:]
+-[CTAssetsPickerController .cxx_destruct]
+_OBJC_IVAR_$_CTAssetsPickerController._shouldCollapseDetailViewController
+_OBJC_IVAR_$_CTAssetsPickerController._assetCollectionThumbnailSize
+_OBJC_IVAR_$_CTAssetsPickerController._assetCollectionFetchOptions
+_OBJC_IVAR_$_CTAssetsPickerController._assetsFetchOptions
+_OBJC_IVAR_$_CTAssetsPickerController._selectedAssets
+_OBJC_IVAR_$_CTAssetsPickerController._showsCancelButton
+_OBJC_IVAR_$_CTAssetsPickerController._showsEmptyAlbums
+_OBJC_IVAR_$_CTAssetsPickerController._showsNumberOfAssets
+_OBJC_IVAR_$_CTAssetsPickerController._alwaysEnableDoneButton
+_OBJC_IVAR_$_CTAssetsPickerController._showsSelectionIndex
+_OBJC_IVAR_$_CTAssetsPickerController._defaultAssetCollection
+_OBJC_SELECTOR_REFERENCES_.22
+_OBJC_SELECTOR_REFERENCES_.24
+_OBJC_SELECTOR_REFERENCES_.26
+_OBJC_SELECTOR_REFERENCES_.28
+_OBJC_SELECTOR_REFERENCES_.30
+_OBJC_SELECTOR_REFERENCES_.32
+_OBJC_SELECTOR_REFERENCES_.34
+_OBJC_SELECTOR_REFERENCES_.36
+_OBJC_SELECTOR_REFERENCES_.38
+_OBJC_CLASSLIST_REFERENCES_$_.39
+_OBJC_SELECTOR_REFERENCES_.41
+_OBJC_SELECTOR_REFERENCES_.43
+_OBJC_SELECTOR_REFERENCES_.45
+_OBJC_CLASSLIST_REFERENCES_$_.46
+_OBJC_SELECTOR_REFERENCES_.48
+_OBJC_CLASSLIST_REFERENCES_$_.49
+_OBJC_SELECTOR_REFERENCES_.51
+_OBJC_IVAR_$_CTAssetsPickerController._assetCollectionSubtypes
+_OBJC_CLASSLIST_REFERENCES_$_.52
+_OBJC_SELECTOR_REFERENCES_.54
+_OBJC_SELECTOR_REFERENCES_.56
+_OBJC_SELECTOR_REFERENCES_.58
+_OBJC_SELECTOR_REFERENCES_.60
+_OBJC_SELECTOR_REFERENCES_.62
+_OBJC_SELECTOR_REFERENCES_.64
+_OBJC_CLASSLIST_REFERENCES_$_.65
+_OBJC_SELECTOR_REFERENCES_.67
+_OBJC_SELECTOR_REFERENCES_.69
+_OBJC_SELECTOR_REFERENCES_.71
+_OBJC_IVAR_$_CTAssetsPickerController._thumbnailRequestOptions
+_OBJC_CLASSLIST_REFERENCES_$_.72
+_OBJC_SELECTOR_REFERENCES_.74
+_OBJC_SELECTOR_REFERENCES_.76
+_OBJC_SELECTOR_REFERENCES_.78
+_OBJC_SELECTOR_REFERENCES_.80
+___block_descriptor_40_e8_32s_e8_v16?0q8l
+_OBJC_SELECTOR_REFERENCES_.85
+_OBJC_SELECTOR_REFERENCES_.87
+_OBJC_SELECTOR_REFERENCES_.89
+_OBJC_SELECTOR_REFERENCES_.91
+_OBJC_SELECTOR_REFERENCES_.93
+_OBJC_SELECTOR_REFERENCES_.95
+_OBJC_CLASSLIST_REFERENCES_$_.96
+_OBJC_SELECTOR_REFERENCES_.98
+_OBJC_SELECTOR_REFERENCES_.100
+_OBJC_SELECTOR_REFERENCES_.102
+_OBJC_SELECTOR_REFERENCES_.104
+_OBJC_SELECTOR_REFERENCES_.106
+_OBJC_SELECTOR_REFERENCES_.108
+_OBJC_CLASSLIST_REFERENCES_$_.109
+_OBJC_CLASSLIST_REFERENCES_$_.110
+_OBJC_SELECTOR_REFERENCES_.112
+_OBJC_CLASSLIST_REFERENCES_$_.113
+_OBJC_SELECTOR_REFERENCES_.115
+_OBJC_SELECTOR_REFERENCES_.117
+_OBJC_SELECTOR_REFERENCES_.119
+_OBJC_SELECTOR_REFERENCES_.121
+_OBJC_SELECTOR_REFERENCES_.123
+_OBJC_SELECTOR_REFERENCES_.125
+_OBJC_SELECTOR_REFERENCES_.127
+_OBJC_SELECTOR_REFERENCES_.129
+_OBJC_SELECTOR_REFERENCES_.131
+_OBJC_SELECTOR_REFERENCES_.133
+_OBJC_SELECTOR_REFERENCES_.135
+_OBJC_SELECTOR_REFERENCES_.137
+_OBJC_SELECTOR_REFERENCES_.139
+_OBJC_SELECTOR_REFERENCES_.141
+_OBJC_SELECTOR_REFERENCES_.143
+_OBJC_CLASSLIST_REFERENCES_$_.144
+_OBJC_SELECTOR_REFERENCES_.146
+_OBJC_SELECTOR_REFERENCES_.148
+_OBJC_SELECTOR_REFERENCES_.150
+_OBJC_SELECTOR_REFERENCES_.152
+_OBJC_SELECTOR_REFERENCES_.154
+_OBJC_SELECTOR_REFERENCES_.156
+_OBJC_SELECTOR_REFERENCES_.158
+_OBJC_CLASSLIST_REFERENCES_$_.159
+_OBJC_SELECTOR_REFERENCES_.161
+_OBJC_CLASSLIST_REFERENCES_$_.162
+_OBJC_SELECTOR_REFERENCES_.164
+_OBJC_CLASSLIST_REFERENCES_$_.165
+_OBJC_CLASSLIST_REFERENCES_$_.166
+_OBJC_SELECTOR_REFERENCES_.168
+_OBJC_SELECTOR_REFERENCES_.176
+_OBJC_SELECTOR_REFERENCES_.178
+_OBJC_SELECTOR_REFERENCES_.180
+_OBJC_SELECTOR_REFERENCES_.182
+_OBJC_SELECTOR_REFERENCES_.186
+_OBJC_SELECTOR_REFERENCES_.188
+_OBJC_SELECTOR_REFERENCES_.190
+_OBJC_SELECTOR_REFERENCES_.192
+_OBJC_SELECTOR_REFERENCES_.194
+_OBJC_SELECTOR_REFERENCES_.196
+_OBJC_SELECTOR_REFERENCES_.198
+_OBJC_SELECTOR_REFERENCES_.200
+_OBJC_SELECTOR_REFERENCES_.202
+_OBJC_SELECTOR_REFERENCES_.204
+_OBJC_SELECTOR_REFERENCES_.206
+_OBJC_SELECTOR_REFERENCES_.208
+_OBJC_SELECTOR_REFERENCES_.210
+_OBJC_SELECTOR_REFERENCES_.212
+_OBJC_SELECTOR_REFERENCES_.214
+___block_descriptor_48_e8_32s40s_e5_v8?0l
+_OBJC_SELECTOR_REFERENCES_.216
+_OBJC_SELECTOR_REFERENCES_.218
+_OBJC_SELECTOR_REFERENCES_.220
+_OBJC_CLASSLIST_REFERENCES_$_.221
+_OBJC_SELECTOR_REFERENCES_.223
+_OBJC_SELECTOR_REFERENCES_.225
+_OBJC_SELECTOR_REFERENCES_.227
+_OBJC_SELECTOR_REFERENCES_.229
+_OBJC_SELECTOR_REFERENCES_.231
+_OBJC_SELECTOR_REFERENCES_.233
+_OBJC_SELECTOR_REFERENCES_.235
+_OBJC_SELECTOR_REFERENCES_.237
+_OBJC_SELECTOR_REFERENCES_.239
+_OBJC_SELECTOR_REFERENCES_.241
+_OBJC_SELECTOR_REFERENCES_.243
+_OBJC_CLASSLIST_REFERENCES_$_.244
+_OBJC_SELECTOR_REFERENCES_.246
+___block_descriptor_40_e34_B24?0"PHAsset"8"NSDictionary"16l
+_OBJC_SELECTOR_REFERENCES_.249
+_OBJC_SELECTOR_REFERENCES_.251
+_OBJC_SELECTOR_REFERENCES_.253
+_OBJC_CLASSLIST_REFERENCES_$_.264
+_OBJC_CLASSLIST_REFERENCES_$_.265
+_OBJC_SELECTOR_REFERENCES_.267
+_OBJC_SELECTOR_REFERENCES_.269
+_OBJC_CLASSLIST_REFERENCES_$_.270
+_OBJC_SELECTOR_REFERENCES_.272
+_OBJC_SELECTOR_REFERENCES_.274
+_OBJC_SELECTOR_REFERENCES_.276
+_OBJC_CLASSLIST_REFERENCES_$_.277
+_OBJC_SELECTOR_REFERENCES_.279
+_OBJC_CLASSLIST_REFERENCES_$_.280
+_OBJC_SELECTOR_REFERENCES_.282
+_OBJC_SELECTOR_REFERENCES_.284
+_OBJC_SELECTOR_REFERENCES_.286
+_OBJC_SELECTOR_REFERENCES_.288
+_OBJC_SELECTOR_REFERENCES_.290
+_OBJC_SELECTOR_REFERENCES_.292
+_OBJC_IVAR_$_CTAssetsPickerController._delegate
+_OBJC_IVAR_$_CTAssetsPickerController._doneButtonTitle
+_OBJC_IVAR_$_CTAssetsPickerController._assetThumbnailSize
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_NSObject
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSObject
+__OBJC_$_PROP_LIST_NSObject
+__OBJC_$_PROTOCOL_METHOD_TYPES_NSObject
+__OBJC_PROTOCOL_$_NSObject
+__OBJC_LABEL_PROTOCOL_$_NSObject
+__OBJC_$_PROTOCOL_REFS_PHPhotoLibraryChangeObserver
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_PHPhotoLibraryChangeObserver
+__OBJC_$_PROTOCOL_METHOD_TYPES_PHPhotoLibraryChangeObserver
+__OBJC_PROTOCOL_$_PHPhotoLibraryChangeObserver
+__OBJC_LABEL_PROTOCOL_$_PHPhotoLibraryChangeObserver
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UISplitViewControllerDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_UISplitViewControllerDelegate
+__OBJC_PROTOCOL_$_UISplitViewControllerDelegate
+__OBJC_LABEL_PROTOCOL_$_UISplitViewControllerDelegate
+__OBJC_$_PROTOCOL_REFS_UINavigationControllerDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UINavigationControllerDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_UINavigationControllerDelegate
+__OBJC_PROTOCOL_$_UINavigationControllerDelegate
+__OBJC_LABEL_PROTOCOL_$_UINavigationControllerDelegate
+__OBJC_CLASS_PROTOCOLS_$_CTAssetsPickerController
+__OBJC_METACLASS_RO_$_CTAssetsPickerController
+__OBJC_$_INSTANCE_METHODS_CTAssetsPickerController
+__OBJC_$_INSTANCE_VARIABLES_CTAssetsPickerController
+__OBJC_$_PROP_LIST_CTAssetsPickerController
+__OBJC_CLASS_RO_$_CTAssetsPickerController
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetsPickerController.m
+CTAssetsPicker/Classes/CTAssetsPickerController.m
+CTAssetsPicker/Classes/CTAssetsPickerController.h
+__49-[CTAssetsPickerController predicateOfMediaType:]_block_invoke
+__destroy_helper_block_e8_32s40s
+__copy_helper_block_e8_32s40s
+__50-[CTAssetsPickerController photoLibraryDidChange:]_block_invoke
+__54-[CTAssetsPickerController requestAuthorizationStatus]_block_invoke.82
+__54-[CTAssetsPickerController requestAuthorizationStatus]_block_invoke_2
+__54-[CTAssetsPickerController requestAuthorizationStatus]_block_invoke
+-[CTAssetThumbnailOverlay initWithFrame:]
+-[CTAssetThumbnailOverlay setupViews]
+-[CTAssetThumbnailOverlay updateConstraints]
+-[CTAssetThumbnailOverlay bind:duration:]
+-[CTAssetThumbnailOverlay layoutMarginsForAsset:]
+-[CTAssetThumbnailOverlay bind:]
+-[CTAssetThumbnailOverlay layoutMarginsForAssetCollection:]
+-[CTAssetThumbnailOverlay gradient]
+-[CTAssetThumbnailOverlay setGradient:]
+-[CTAssetThumbnailOverlay badge]
+-[CTAssetThumbnailOverlay setBadge:]
+-[CTAssetThumbnailOverlay duration]
+-[CTAssetThumbnailOverlay setDuration:]
+-[CTAssetThumbnailOverlay didSetupConstraints]
+-[CTAssetThumbnailOverlay setDidSetupConstraints:]
+-[CTAssetThumbnailOverlay .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.11
+_OBJC_SELECTOR_REFERENCES_.13
+_OBJC_SELECTOR_REFERENCES_.15
+_OBJC_SELECTOR_REFERENCES_.17
+_OBJC_SELECTOR_REFERENCES_.19
+_OBJC_SELECTOR_REFERENCES_.21
+_OBJC_CLASSLIST_REFERENCES_$_.22
+_OBJC_CLASSLIST_REFERENCES_$_.33
+_OBJC_CLASSLIST_REFERENCES_$_.34
+_OBJC_SELECTOR_REFERENCES_.40
+_OBJC_SELECTOR_REFERENCES_.42
+_OBJC_SELECTOR_REFERENCES_.44
+_OBJC_SELECTOR_REFERENCES_.46
+_OBJC_SELECTOR_REFERENCES_.50
+_OBJC_SELECTOR_REFERENCES_.52
+_OBJC_SELECTOR_REFERENCES_.66
+_OBJC_SELECTOR_REFERENCES_.68
+_OBJC_SELECTOR_REFERENCES_.70
+_OBJC_SELECTOR_REFERENCES_.72
+_OBJC_SELECTOR_REFERENCES_.82
+_OBJC_SELECTOR_REFERENCES_.84
+_OBJC_IVAR_$_CTAssetThumbnailOverlay._gradient
+_OBJC_IVAR_$_CTAssetThumbnailOverlay._badge
+_OBJC_IVAR_$_CTAssetThumbnailOverlay._duration
+_OBJC_IVAR_$_CTAssetThumbnailOverlay._didSetupConstraints
+__OBJC_METACLASS_RO_$_CTAssetThumbnailOverlay
+__OBJC_$_INSTANCE_METHODS_CTAssetThumbnailOverlay
+__OBJC_$_INSTANCE_VARIABLES_CTAssetThumbnailOverlay
+__OBJC_$_PROP_LIST_CTAssetThumbnailOverlay
+__OBJC_CLASS_RO_$_CTAssetThumbnailOverlay
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetThumbnailOverlay.m
+CTAssetsPicker/Classes/CTAssetThumbnailOverlay.m
+-[NSDateFormatter(CTAssetsPickerController) ctassetsPickerStringFromTimeInterval:]
+-[NSDateFormatter(CTAssetsPickerController) ctassetsPickerSpellOutStringFromTimeInterval:]
+-[NSDateFormatter(CTAssetsPickerController) dateComponetsWithTimeInterval:]
+_OBJC_CLASSLIST_REFERENCES_$_.13
+_OBJC_SELECTOR_REFERENCES_.31
+_OBJC_CLASSLIST_REFERENCES_$_.36
+__OBJC_$_CATEGORY_INSTANCE_METHODS_NSDateFormatter_$_CTAssetsPickerController
+__OBJC_$_CATEGORY_NSDateFormatter_$_CTAssetsPickerController
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Categories/NSDateFormatter+CTAssetsPickerController.m
+CTAssetsPicker/Categories/NSDateFormatter+CTAssetsPickerController.m
+-[PHAsset(CTAssetsPickerController) ctassetsPickerIsPhoto]
+-[PHAsset(CTAssetsPickerController) ctassetsPickerIsVideo]
+-[PHAsset(CTAssetsPickerController) ctassetsPickerIsHighFrameRateVideo]
+-[PHAsset(CTAssetsPickerController) ctassetsPickerIsTimelapseVideo]
+-[PHAsset(CTAssetsPickerController) badgeImage]
+-[PHAsset(CTAssetsPickerController) ctassetsPickerAccessibilityLabel]
+__OBJC_$_CATEGORY_INSTANCE_METHODS_PHAsset_$_CTAssetsPickerController
+__OBJC_$_CATEGORY_PHAsset_$_CTAssetsPickerController
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Categories/PHAsset+CTAssetsPickerController.m
+CTAssetsPicker/Categories/PHAsset+CTAssetsPickerController.m
++[CTAssetItemViewController assetItemViewControllerForAsset:]
+-[CTAssetItemViewController initWithAsset:]
+-[CTAssetItemViewController viewDidLoad]
+-[CTAssetItemViewController viewWillAppear:]
+-[CTAssetItemViewController viewWillDisappear:]
+-[CTAssetItemViewController viewWillLayoutSubviews]
+-[CTAssetItemViewController viewWillTransitionToSize:withTransitionCoordinator:]
+___80-[CTAssetItemViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke
+-[CTAssetItemViewController picker]
+-[CTAssetItemViewController setupViews]
+-[CTAssetItemViewController setupScrollViewButtons]
+-[CTAssetItemViewController cancelRequestAsset]
+-[CTAssetItemViewController cancelRequestImage]
+-[CTAssetItemViewController cancelRequestPlayerItem]
+-[CTAssetItemViewController requestAssetImage]
+___46-[CTAssetItemViewController requestAssetImage]_block_invoke
+___46-[CTAssetItemViewController requestAssetImage]_block_invoke_2
+___copy_helper_block_e8_32s40s48s
+___destroy_helper_block_e8_32s40s48s
+-[CTAssetItemViewController targetImageSize]
+-[CTAssetItemViewController imageRequestOptions]
+___48-[CTAssetItemViewController imageRequestOptions]_block_invoke
+___48-[CTAssetItemViewController imageRequestOptions]_block_invoke_2
+-[CTAssetItemViewController requestAssetPlayerItem:]
+___52-[CTAssetItemViewController requestAssetPlayerItem:]_block_invoke
+___52-[CTAssetItemViewController requestAssetPlayerItem:]_block_invoke_2
+-[CTAssetItemViewController videoRequestOptions]
+___48-[CTAssetItemViewController videoRequestOptions]_block_invoke
+___48-[CTAssetItemViewController videoRequestOptions]_block_invoke_2
+-[CTAssetItemViewController showRequestImageError:title:]
+-[CTAssetItemViewController showRequestVideoError:title:]
+-[CTAssetItemViewController showRequestError:title:]
+-[CTAssetItemViewController playAsset:]
+-[CTAssetItemViewController pauseAsset:]
+-[CTAssetItemViewController selectionButtonTouchDown:]
+-[CTAssetItemViewController selectionButtonTouchUpInside:]
+-[CTAssetItemViewController assetScrollView:shouldEnableAsset:]
+-[CTAssetItemViewController assetScrollView:shouldSelectAsset:]
+-[CTAssetItemViewController assetScrollView:didSelectAsset:]
+-[CTAssetItemViewController assetScrollView:shouldDeselectAsset:]
+-[CTAssetItemViewController assetScrollView:didDeselectAsset:]
+-[CTAssetItemViewController assetScrollView:shouldHighlightAsset:]
+-[CTAssetItemViewController assetScrollView:didHighlightAsset:]
+-[CTAssetItemViewController assetScrollView:didUnhighlightAsset:]
+-[CTAssetItemViewController allowsSelection]
+-[CTAssetItemViewController setAllowsSelection:]
+-[CTAssetItemViewController asset]
+-[CTAssetItemViewController setAsset:]
+-[CTAssetItemViewController image]
+-[CTAssetItemViewController setImage:]
+-[CTAssetItemViewController setPicker:]
+-[CTAssetItemViewController imageManager]
+-[CTAssetItemViewController setImageManager:]
+-[CTAssetItemViewController imageRequestID]
+-[CTAssetItemViewController setImageRequestID:]
+-[CTAssetItemViewController playerItemRequestID]
+-[CTAssetItemViewController setPlayerItemRequestID:]
+-[CTAssetItemViewController scrollView]
+-[CTAssetItemViewController setScrollView:]
+-[CTAssetItemViewController didSetupConstraints]
+-[CTAssetItemViewController setDidSetupConstraints:]
+-[CTAssetItemViewController .cxx_destruct]
+_OBJC_IVAR_$_CTAssetItemViewController._imageManager
+___block_descriptor_40_e8_32s_e56_v16?0"<UIViewControllerTransitionCoordinatorContext>"8l
+_OBJC_CLASSLIST_REFERENCES_$_.45
+_OBJC_SELECTOR_REFERENCES_.47
+_OBJC_SELECTOR_REFERENCES_.49
+_OBJC_SELECTOR_REFERENCES_.53
+_OBJC_SELECTOR_REFERENCES_.55
+_OBJC_SELECTOR_REFERENCES_.57
+_OBJC_SELECTOR_REFERENCES_.59
+_OBJC_SELECTOR_REFERENCES_.61
+_OBJC_SELECTOR_REFERENCES_.63
+_OBJC_SELECTOR_REFERENCES_.65
+_OBJC_SELECTOR_REFERENCES_.73
+_OBJC_SELECTOR_REFERENCES_.75
+_OBJC_SELECTOR_REFERENCES_.77
+_OBJC_SELECTOR_REFERENCES_.79
+_OBJC_SELECTOR_REFERENCES_.81
+_OBJC_SELECTOR_REFERENCES_.83
+_OBJC_SELECTOR_REFERENCES_.97
+_OBJC_SELECTOR_REFERENCES_.99
+_OBJC_SELECTOR_REFERENCES_.101
+_OBJC_SELECTOR_REFERENCES_.103
+_OBJC_SELECTOR_REFERENCES_.105
+_OBJC_SELECTOR_REFERENCES_.107
+_OBJC_SELECTOR_REFERENCES_.109
+___block_descriptor_56_e8_32s40s48s_e5_v8?0l
+___block_descriptor_40_e8_32s_e34_v24?0"UIImage"8"NSDictionary"16l
+_OBJC_SELECTOR_REFERENCES_.113
+_OBJC_CLASSLIST_REFERENCES_$_.116
+_OBJC_SELECTOR_REFERENCES_.118
+_OBJC_SELECTOR_REFERENCES_.120
+_OBJC_SELECTOR_REFERENCES_.122
+_OBJC_CLASSLIST_REFERENCES_$_.123
+___block_descriptor_48_e8_32s_e5_v8?0l
+___block_descriptor_40_e8_32s_e41_v40?0d8"NSError"16^B24"NSDictionary"32l
+_OBJC_SELECTOR_REFERENCES_.130
+_OBJC_SELECTOR_REFERENCES_.132
+_OBJC_SELECTOR_REFERENCES_.134
+_OBJC_CLASSLIST_REFERENCES_$_.135
+_OBJC_SELECTOR_REFERENCES_.144
+___block_descriptor_40_e8_32s_e39_v24?0"AVPlayerItem"8"NSDictionary"16l
+_OBJC_SELECTOR_REFERENCES_.151
+_OBJC_SELECTOR_REFERENCES_.153
+_OBJC_CLASSLIST_REFERENCES_$_.154
+___block_descriptor_32_e41_v40?0d8"NSError"16^B24"NSDictionary"32l
+___block_literal_global
+___block_descriptor_32_e5_v8?0l
+___block_literal_global.155
+_OBJC_SELECTOR_REFERENCES_.157
+_OBJC_CLASSLIST_REFERENCES_$_.158
+_OBJC_SELECTOR_REFERENCES_.160
+_OBJC_SELECTOR_REFERENCES_.162
+_OBJC_CLASSLIST_REFERENCES_$_.163
+_OBJC_SELECTOR_REFERENCES_.167
+_OBJC_SELECTOR_REFERENCES_.169
+_OBJC_SELECTOR_REFERENCES_.171
+_OBJC_SELECTOR_REFERENCES_.173
+_OBJC_SELECTOR_REFERENCES_.175
+_OBJC_SELECTOR_REFERENCES_.177
+_OBJC_SELECTOR_REFERENCES_.179
+_OBJC_SELECTOR_REFERENCES_.181
+_OBJC_SELECTOR_REFERENCES_.183
+_OBJC_SELECTOR_REFERENCES_.185
+_OBJC_SELECTOR_REFERENCES_.187
+_OBJC_SELECTOR_REFERENCES_.189
+_OBJC_SELECTOR_REFERENCES_.191
+_OBJC_SELECTOR_REFERENCES_.193
+_OBJC_SELECTOR_REFERENCES_.195
+_OBJC_SELECTOR_REFERENCES_.197
+_OBJC_SELECTOR_REFERENCES_.199
+_OBJC_SELECTOR_REFERENCES_.201
+_OBJC_SELECTOR_REFERENCES_.203
+_OBJC_SELECTOR_REFERENCES_.205
+_OBJC_SELECTOR_REFERENCES_.207
+_OBJC_SELECTOR_REFERENCES_.209
+_OBJC_SELECTOR_REFERENCES_.211
+_OBJC_SELECTOR_REFERENCES_.213
+_OBJC_SELECTOR_REFERENCES_.215
+_OBJC_SELECTOR_REFERENCES_.217
+_OBJC_SELECTOR_REFERENCES_.219
+_OBJC_IVAR_$_CTAssetItemViewController._allowsSelection
+_OBJC_IVAR_$_CTAssetItemViewController._asset
+_OBJC_IVAR_$_CTAssetItemViewController._image
+_OBJC_IVAR_$_CTAssetItemViewController._picker
+_OBJC_IVAR_$_CTAssetItemViewController._imageRequestID
+_OBJC_IVAR_$_CTAssetItemViewController._playerItemRequestID
+_OBJC_IVAR_$_CTAssetItemViewController._scrollView
+_OBJC_IVAR_$_CTAssetItemViewController._didSetupConstraints
+__OBJC_$_CLASS_METHODS_CTAssetItemViewController
+__OBJC_METACLASS_RO_$_CTAssetItemViewController
+__OBJC_$_INSTANCE_METHODS_CTAssetItemViewController
+__OBJC_$_INSTANCE_VARIABLES_CTAssetItemViewController
+__OBJC_$_PROP_LIST_CTAssetItemViewController
+__OBJC_CLASS_RO_$_CTAssetItemViewController
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetItemViewController.m
+CTAssetsPicker/Classes/CTAssetItemViewController.m
+CTAssetsPicker/Classes/CTAssetItemViewController.h
+__48-[CTAssetItemViewController videoRequestOptions]_block_invoke_2
+__48-[CTAssetItemViewController videoRequestOptions]_block_invoke
+__52-[CTAssetItemViewController requestAssetPlayerItem:]_block_invoke_2
+__52-[CTAssetItemViewController requestAssetPlayerItem:]_block_invoke
+__48-[CTAssetItemViewController imageRequestOptions]_block_invoke_2
+__48-[CTAssetItemViewController imageRequestOptions]_block_invoke
+__destroy_helper_block_e8_32s40s48s
+__copy_helper_block_e8_32s40s48s
+__46-[CTAssetItemViewController requestAssetImage]_block_invoke_2
+__46-[CTAssetItemViewController requestAssetImage]_block_invoke
+__80-[CTAssetItemViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke
+-[CTAssetsGridViewController init]
+-[CTAssetsGridViewController viewDidLoad]
+-[CTAssetsGridViewController viewWillAppear:]
+-[CTAssetsGridViewController viewDidAppear:]
+-[CTAssetsGridViewController viewWillLayoutSubviews]
+-[CTAssetsGridViewController viewDidLayoutSubviews]
+-[CTAssetsGridViewController dealloc]
+-[CTAssetsGridViewController picker]
+-[CTAssetsGridViewController assetAtIndexPath:]
+-[CTAssetsGridViewController setupViews]
+-[CTAssetsGridViewController setupButtons]
+-[CTAssetsGridViewController setupAssets]
+-[CTAssetsGridViewController updateCollectionViewLayout]
+___56-[CTAssetsGridViewController updateCollectionViewLayout]_block_invoke
+___copy_helper_block_e8_32w
+___destroy_helper_block_e8_32w
+-[CTAssetsGridViewController scrollToBottomIfNeeded]
+-[CTAssetsGridViewController addNotificationObserver]
+-[CTAssetsGridViewController removeNotificationObserver]
+-[CTAssetsGridViewController registerChangeObserver]
+-[CTAssetsGridViewController unregisterChangeObserver]
+-[CTAssetsGridViewController photoLibraryDidChange:]
+___52-[CTAssetsGridViewController photoLibraryDidChange:]_block_invoke
+___52-[CTAssetsGridViewController photoLibraryDidChange:]_block_invoke_2
+___copy_helper_block_e8_32s40s48s56s64s72s80s
+___destroy_helper_block_e8_32s40s48s56s64s72s80s
+___52-[CTAssetsGridViewController photoLibraryDidChange:]_block_invoke.214
+-[CTAssetsGridViewController assetsPickerSelectedAssetsDidChange:]
+-[CTAssetsGridViewController updateTitle:]
+-[CTAssetsGridViewController updateButton:]
+-[CTAssetsGridViewController assetsPickerDidSelectAsset:]
+-[CTAssetsGridViewController assetsPickerDidDeselectAsset:]
+-[CTAssetsGridViewController updateSelectionOrderLabels]
+-[CTAssetsGridViewController addGestureRecognizer]
+-[CTAssetsGridViewController pushPageViewController:]
+-[CTAssetsGridViewController reloadData]
+-[CTAssetsGridViewController resetCachedAssetImages]
+-[CTAssetsGridViewController updateCachedAssetImages]
+___53-[CTAssetsGridViewController updateCachedAssetImages]_block_invoke
+___53-[CTAssetsGridViewController updateCachedAssetImages]_block_invoke.299
+-[CTAssetsGridViewController startCachingThumbnailsForIndexPaths:]
+-[CTAssetsGridViewController stopCachingThumbnailsForIndexPaths:]
+-[CTAssetsGridViewController computeDifferenceBetweenRect:andRect:removedHandler:addedHandler:]
+-[CTAssetsGridViewController scrollViewDidScroll:]
+-[CTAssetsGridViewController showNoAssets]
+-[CTAssetsGridViewController hideNoAssets]
+-[CTAssetsGridViewController numberOfSectionsInCollectionView:]
+-[CTAssetsGridViewController collectionView:numberOfItemsInSection:]
+-[CTAssetsGridViewController collectionView:cellForItemAtIndexPath:]
+-[CTAssetsGridViewController requestThumbnailForCell:targetSize:asset:]
+___71-[CTAssetsGridViewController requestThumbnailForCell:targetSize:asset:]_block_invoke
+-[CTAssetsGridViewController collectionView:viewForSupplementaryElementOfKind:atIndexPath:]
+-[CTAssetsGridViewController collectionView:shouldSelectItemAtIndexPath:]
+-[CTAssetsGridViewController collectionView:didSelectItemAtIndexPath:]
+-[CTAssetsGridViewController collectionView:shouldDeselectItemAtIndexPath:]
+-[CTAssetsGridViewController collectionView:didDeselectItemAtIndexPath:]
+-[CTAssetsGridViewController collectionView:shouldHighlightItemAtIndexPath:]
+-[CTAssetsGridViewController collectionView:didHighlightItemAtIndexPath:]
+-[CTAssetsGridViewController collectionView:didUnhighlightItemAtIndexPath:]
+-[CTAssetsGridViewController delegate]
+-[CTAssetsGridViewController setDelegate:]
+-[CTAssetsGridViewController assetCollection]
+-[CTAssetsGridViewController setAssetCollection:]
+-[CTAssetsGridViewController setPicker:]
+-[CTAssetsGridViewController fetchResult]
+-[CTAssetsGridViewController setFetchResult:]
+-[CTAssetsGridViewController imageManager]
+-[CTAssetsGridViewController setImageManager:]
+-[CTAssetsGridViewController previousPreheatRect]
+-[CTAssetsGridViewController setPreviousPreheatRect:]
+-[CTAssetsGridViewController previousBounds]
+-[CTAssetsGridViewController setPreviousBounds:]
+-[CTAssetsGridViewController footer]
+-[CTAssetsGridViewController setFooter:]
+-[CTAssetsGridViewController noAssetsView]
+-[CTAssetsGridViewController setNoAssetsView:]
+-[CTAssetsGridViewController didLayoutSubviews]
+-[CTAssetsGridViewController setDidLayoutSubviews:]
+-[CTAssetsGridViewController .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.5
+_OBJC_IVAR_$_CTAssetsGridViewController._imageManager
+_OBJC_SELECTOR_REFERENCES_.11
+_OBJC_CLASSLIST_REFERENCES_$_.12
+_OBJC_CLASSLIST_REFERENCES_$_.17
+_OBJC_SELECTOR_REFERENCES_.27
+_OBJC_SELECTOR_REFERENCES_.29
+_OBJC_SELECTOR_REFERENCES_.33
+_OBJC_SELECTOR_REFERENCES_.35
+_OBJC_SELECTOR_REFERENCES_.37
+_OBJC_SELECTOR_REFERENCES_.39
+_OBJC_CLASSLIST_REFERENCES_$_.88
+_OBJC_SELECTOR_REFERENCES_.90
+_OBJC_SELECTOR_REFERENCES_.92
+_OBJC_SELECTOR_REFERENCES_.94
+_OBJC_CLASSLIST_REFERENCES_$_.95
+_OBJC_CLASSLIST_REFERENCES_$_.106
+_OBJC_SELECTOR_REFERENCES_.116
+_OBJC_CLASSLIST_REFERENCES_$_.117
+_OBJC_CLASSLIST_REFERENCES_$_.124
+_OBJC_SELECTOR_REFERENCES_.126
+_OBJC_SELECTOR_REFERENCES_.128
+_OBJC_SELECTOR_REFERENCES_.136
+_OBJC_SELECTOR_REFERENCES_.138
+_OBJC_SELECTOR_REFERENCES_.140
+_OBJC_SELECTOR_REFERENCES_.142
+___block_descriptor_40_e8_32w_e8_v12?0B8l
+_OBJC_SELECTOR_REFERENCES_.159
+_OBJC_SELECTOR_REFERENCES_.166
+_OBJC_CLASSLIST_REFERENCES_$_.167
+_OBJC_CLASSLIST_REFERENCES_$_.180
+_OBJC_SELECTOR_REFERENCES_.184
+___block_descriptor_88_e8_32s40s48s56s64s72s80s_e5_v8?0l
+___block_descriptor_40_e8_32s_e8_v12?0B8l
+_OBJC_SELECTOR_REFERENCES_.222
+_OBJC_SELECTOR_REFERENCES_.224
+_OBJC_SELECTOR_REFERENCES_.226
+_OBJC_SELECTOR_REFERENCES_.228
+_OBJC_SELECTOR_REFERENCES_.230
+_OBJC_SELECTOR_REFERENCES_.232
+_OBJC_SELECTOR_REFERENCES_.234
+_OBJC_SELECTOR_REFERENCES_.236
+_OBJC_SELECTOR_REFERENCES_.238
+_OBJC_SELECTOR_REFERENCES_.240
+_OBJC_SELECTOR_REFERENCES_.242
+_OBJC_SELECTOR_REFERENCES_.244
+_OBJC_SELECTOR_REFERENCES_.248
+_OBJC_SELECTOR_REFERENCES_.250
+_OBJC_SELECTOR_REFERENCES_.252
+_OBJC_SELECTOR_REFERENCES_.254
+_OBJC_CLASSLIST_REFERENCES_$_.255
+_OBJC_SELECTOR_REFERENCES_.257
+_OBJC_SELECTOR_REFERENCES_.259
+_OBJC_SELECTOR_REFERENCES_.261
+_OBJC_SELECTOR_REFERENCES_.263
+_OBJC_SELECTOR_REFERENCES_.265
+_OBJC_CLASSLIST_REFERENCES_$_.268
+_OBJC_SELECTOR_REFERENCES_.270
+_OBJC_SELECTOR_REFERENCES_.278
+_OBJC_SELECTOR_REFERENCES_.280
+_OBJC_CLASSLIST_REFERENCES_$_.291
+_OBJC_SELECTOR_REFERENCES_.293
+_OBJC_SELECTOR_REFERENCES_.295
+_OBJC_SELECTOR_REFERENCES_.297
+___block_descriptor_48_e8_32s40s_e39_v40?0{CGRect={CGPoint=dd}{CGSize=dd}}8l
+_OBJC_SELECTOR_REFERENCES_.301
+_OBJC_SELECTOR_REFERENCES_.303
+_OBJC_SELECTOR_REFERENCES_.305
+_OBJC_SELECTOR_REFERENCES_.307
+_OBJC_SELECTOR_REFERENCES_.309
+_OBJC_CLASSLIST_REFERENCES_$_.310
+_OBJC_SELECTOR_REFERENCES_.312
+_OBJC_SELECTOR_REFERENCES_.314
+_OBJC_SELECTOR_REFERENCES_.316
+_OBJC_SELECTOR_REFERENCES_.318
+_OBJC_CLASSLIST_REFERENCES_$_.319
+_OBJC_SELECTOR_REFERENCES_.321
+_OBJC_SELECTOR_REFERENCES_.323
+_OBJC_SELECTOR_REFERENCES_.325
+_OBJC_SELECTOR_REFERENCES_.327
+_OBJC_SELECTOR_REFERENCES_.329
+_OBJC_SELECTOR_REFERENCES_.331
+_OBJC_SELECTOR_REFERENCES_.333
+_OBJC_SELECTOR_REFERENCES_.335
+_OBJC_SELECTOR_REFERENCES_.337
+_OBJC_SELECTOR_REFERENCES_.339
+_OBJC_SELECTOR_REFERENCES_.341
+_OBJC_SELECTOR_REFERENCES_.343
+_OBJC_SELECTOR_REFERENCES_.345
+_OBJC_SELECTOR_REFERENCES_.347
+_OBJC_SELECTOR_REFERENCES_.349
+___block_descriptor_56_e8_32s40s_e34_v24?0"UIImage"8"NSDictionary"16l
+_OBJC_SELECTOR_REFERENCES_.352
+_OBJC_SELECTOR_REFERENCES_.354
+_OBJC_SELECTOR_REFERENCES_.356
+_OBJC_SELECTOR_REFERENCES_.358
+_OBJC_SELECTOR_REFERENCES_.360
+_OBJC_SELECTOR_REFERENCES_.362
+_OBJC_SELECTOR_REFERENCES_.364
+_OBJC_SELECTOR_REFERENCES_.366
+_OBJC_SELECTOR_REFERENCES_.368
+_OBJC_SELECTOR_REFERENCES_.370
+_OBJC_SELECTOR_REFERENCES_.372
+_OBJC_SELECTOR_REFERENCES_.374
+_OBJC_SELECTOR_REFERENCES_.376
+_OBJC_IVAR_$_CTAssetsGridViewController._delegate
+_OBJC_IVAR_$_CTAssetsGridViewController._assetCollection
+_OBJC_IVAR_$_CTAssetsGridViewController._picker
+_OBJC_IVAR_$_CTAssetsGridViewController._fetchResult
+_OBJC_IVAR_$_CTAssetsGridViewController._previousPreheatRect
+_OBJC_IVAR_$_CTAssetsGridViewController._previousBounds
+_OBJC_IVAR_$_CTAssetsGridViewController._footer
+_OBJC_IVAR_$_CTAssetsGridViewController._noAssetsView
+_OBJC_IVAR_$_CTAssetsGridViewController._didLayoutSubviews
+__OBJC_CLASS_PROTOCOLS_$_CTAssetsGridViewController
+__OBJC_METACLASS_RO_$_CTAssetsGridViewController
+__OBJC_$_INSTANCE_METHODS_CTAssetsGridViewController
+__OBJC_$_INSTANCE_VARIABLES_CTAssetsGridViewController
+__OBJC_$_PROP_LIST_CTAssetsGridViewController
+__OBJC_CLASS_RO_$_CTAssetsGridViewController
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetsGridViewController.m
+CTAssetsPicker/Classes/CTAssetsGridViewController.m
+CTAssetsPicker/Classes/CTAssetsGridViewController.h
+__71-[CTAssetsGridViewController requestThumbnailForCell:targetSize:asset:]_block_invoke
+__53-[CTAssetsGridViewController updateCachedAssetImages]_block_invoke.299
+__53-[CTAssetsGridViewController updateCachedAssetImages]_block_invoke
+__52-[CTAssetsGridViewController photoLibraryDidChange:]_block_invoke.214
+__destroy_helper_block_e8_32s40s48s56s64s72s80s
+__copy_helper_block_e8_32s40s48s56s64s72s80s
+__52-[CTAssetsGridViewController photoLibraryDidChange:]_block_invoke_2
+__52-[CTAssetsGridViewController photoLibraryDidChange:]_block_invoke
+__destroy_helper_block_e8_32w
+__copy_helper_block_e8_32w
+__56-[CTAssetsGridViewController updateCollectionViewLayout]_block_invoke
+-[CTAssetsViewControllerTransition transitionDuration:]
+-[CTAssetsViewControllerTransition animateTransition:]
+___54-[CTAssetsViewControllerTransition animateTransition:]_block_invoke
+___54-[CTAssetsViewControllerTransition animateTransition:]_block_invoke.81
+___54-[CTAssetsViewControllerTransition animateTransition:]_block_invoke.97
+___54-[CTAssetsViewControllerTransition animateTransition:]_block_invoke.98
+-[CTAssetsViewControllerTransition canPerspectiveZoomWithImageSize:boundsSize:]
+-[CTAssetsViewControllerTransition resizedSnapshot:]
+-[CTAssetsViewControllerTransition operation]
+-[CTAssetsViewControllerTransition setOperation:]
+_OBJC_CLASSLIST_REFERENCES_$_.7
+_OBJC_CLASSLIST_REFERENCES_$_.20
+_OBJC_CLASSLIST_REFERENCES_$_.29
+___block_descriptor_76_e8_32s40s48s_e5_v8?0l
+___block_descriptor_56_e8_32s40s48s_e8_v12?0B8l
+_OBJC_SELECTOR_REFERENCES_.88
+_OBJC_SELECTOR_REFERENCES_.96
+___block_descriptor_100_e8_32s40s_e5_v8?0l
+___block_descriptor_48_e8_32s40s_e8_v12?0B8l
+__OBJC_$_PROTOCOL_REFS_UIViewControllerAnimatedTransitioning
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_UIViewControllerAnimatedTransitioning
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UIViewControllerAnimatedTransitioning
+__OBJC_$_PROTOCOL_METHOD_TYPES_UIViewControllerAnimatedTransitioning
+__OBJC_PROTOCOL_$_UIViewControllerAnimatedTransitioning
+__OBJC_LABEL_PROTOCOL_$_UIViewControllerAnimatedTransitioning
+__OBJC_CLASS_PROTOCOLS_$_CTAssetsViewControllerTransition
+__OBJC_METACLASS_RO_$_CTAssetsViewControllerTransition
+__OBJC_$_INSTANCE_METHODS_CTAssetsViewControllerTransition
+_OBJC_IVAR_$_CTAssetsViewControllerTransition._operation
+__OBJC_$_INSTANCE_VARIABLES_CTAssetsViewControllerTransition
+__OBJC_$_PROP_LIST_CTAssetsViewControllerTransition
+__OBJC_CLASS_RO_$_CTAssetsViewControllerTransition
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetsViewControllerTransition.m
+CTAssetsPicker/Classes/CTAssetsViewControllerTransition.h
+CTAssetsPicker/Classes/CTAssetsViewControllerTransition.m
+__CGSizeEqualToSize
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.3.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
+__54-[CTAssetsViewControllerTransition animateTransition:]_block_invoke.98
+__54-[CTAssetsViewControllerTransition animateTransition:]_block_invoke.97
+__54-[CTAssetsViewControllerTransition animateTransition:]_block_invoke.81
+__54-[CTAssetsViewControllerTransition animateTransition:]_block_invoke
+-[CTAssetsNavigationController viewDidLoad]
+-[CTAssetsNavigationController didReceiveMemoryWarning]
+-[CTAssetsNavigationController pushViewController:animated:]
+-[CTAssetsNavigationController popToRootViewControllerAnimated:]
+-[CTAssetsNavigationController popToViewController:animated:]
+-[CTAssetsNavigationController navigationController:didShowViewController:animated:]
+-[CTAssetsNavigationController gestureRecognizerShouldBegin:]
+__OBJC_$_PROTOCOL_REFS_UIGestureRecognizerDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UIGestureRecognizerDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_UIGestureRecognizerDelegate
+__OBJC_PROTOCOL_$_UIGestureRecognizerDelegate
+__OBJC_LABEL_PROTOCOL_$_UIGestureRecognizerDelegate
+__OBJC_CLASS_PROTOCOLS_$_CTAssetsNavigationController
+__OBJC_METACLASS_RO_$_CTAssetsNavigationController
+__OBJC_$_INSTANCE_METHODS_CTAssetsNavigationController
+__OBJC_$_PROP_LIST_CTAssetsNavigationController
+__OBJC_CLASS_RO_$_CTAssetsNavigationController
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetsNavigationController.m
+CTAssetsPicker/Classes/CTAssetsNavigationController.m
+-[CTAssetsGridViewCell initWithFrame:]
+-[CTAssetsGridViewCell setupViews]
+-[CTAssetsGridViewCell disabledColor]
+-[CTAssetsGridViewCell setDisabledColor:]
+-[CTAssetsGridViewCell highlightedColor]
+-[CTAssetsGridViewCell setHighlightedColor:]
+-[CTAssetsGridViewCell setEnabled:]
+-[CTAssetsGridViewCell setHighlighted:]
+-[CTAssetsGridViewCell setSelected:]
+-[CTAssetsGridViewCell setShowsSelectionIndex:]
+-[CTAssetsGridViewCell setSelectionIndex:]
+-[CTAssetsGridViewCell updateConstraints]
+___41-[CTAssetsGridViewCell updateConstraints]_block_invoke
+-[CTAssetsGridViewCell bind:]
+-[CTAssetsGridViewCell accessibilityLabel]
+-[CTAssetsGridViewCell isEnabled]
+-[CTAssetsGridViewCell showsSelectionIndex]
+-[CTAssetsGridViewCell selectionIndex]
+-[CTAssetsGridViewCell asset]
+-[CTAssetsGridViewCell setAsset:]
+-[CTAssetsGridViewCell disabledImageView]
+-[CTAssetsGridViewCell setDisabledImageView:]
+-[CTAssetsGridViewCell disabledView]
+-[CTAssetsGridViewCell setDisabledView:]
+-[CTAssetsGridViewCell highlightedView]
+-[CTAssetsGridViewCell setHighlightedView:]
+-[CTAssetsGridViewCell selectedView]
+-[CTAssetsGridViewCell setSelectedView:]
+-[CTAssetsGridViewCell didSetupConstraints]
+-[CTAssetsGridViewCell setDidSetupConstraints:]
+-[CTAssetsGridViewCell .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.25
+_OBJC_CLASSLIST_REFERENCES_$_.53
+_OBJC_IVAR_$_CTAssetsGridViewCell._enabled
+_OBJC_IVAR_$_CTAssetsGridViewCell._showsSelectionIndex
+_OBJC_IVAR_$_CTAssetsGridViewCell._selectionIndex
+_OBJC_CLASSLIST_REFERENCES_$_.68
+_OBJC_CLASSLIST_REFERENCES_$_.90
+_OBJC_IVAR_$_CTAssetsGridViewCell._asset
+_OBJC_IVAR_$_CTAssetsGridViewCell._disabledImageView
+_OBJC_IVAR_$_CTAssetsGridViewCell._disabledView
+_OBJC_IVAR_$_CTAssetsGridViewCell._highlightedView
+_OBJC_IVAR_$_CTAssetsGridViewCell._selectedView
+_OBJC_IVAR_$_CTAssetsGridViewCell._didSetupConstraints
+__OBJC_METACLASS_RO_$_CTAssetsGridViewCell
+__OBJC_$_INSTANCE_METHODS_CTAssetsGridViewCell
+__OBJC_$_INSTANCE_VARIABLES_CTAssetsGridViewCell
+__OBJC_$_PROP_LIST_CTAssetsGridViewCell
+__OBJC_CLASS_RO_$_CTAssetsGridViewCell
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetsGridViewCell.m
+CTAssetsPicker/Classes/CTAssetsGridViewCell.m
+CTAssetsPicker/Classes/CTAssetsGridViewCell.h
+__41-[CTAssetsGridViewCell updateConstraints]_block_invoke
+-[CTAssetsPickerNoAssetsView initWithFrame:]
+-[CTAssetsPickerNoAssetsView setupViews]
+-[CTAssetsPickerNoAssetsView deviceModel]
+-[CTAssetsPickerNoAssetsView isCameraDeviceAvailable]
+-[CTAssetsPickerNoAssetsView noAssetsMessage]
+-[CTAssetsPickerNoAssetsView updateConstraints]
+-[CTAssetsPickerNoAssetsView title]
+-[CTAssetsPickerNoAssetsView setTitle:]
+-[CTAssetsPickerNoAssetsView message]
+-[CTAssetsPickerNoAssetsView setMessage:]
+-[CTAssetsPickerNoAssetsView didSetupConstraints]
+-[CTAssetsPickerNoAssetsView setDidSetupConstraints:]
+-[CTAssetsPickerNoAssetsView .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.10
+_OBJC_CLASSLIST_REFERENCES_$_.26
+_OBJC_CLASSLIST_REFERENCES_$_.51
+_OBJC_CLASSLIST_REFERENCES_$_.56
+_OBJC_IVAR_$_CTAssetsPickerNoAssetsView._title
+_OBJC_IVAR_$_CTAssetsPickerNoAssetsView._message
+_OBJC_IVAR_$_CTAssetsPickerNoAssetsView._didSetupConstraints
+__OBJC_METACLASS_RO_$_CTAssetsPickerNoAssetsView
+__OBJC_$_INSTANCE_METHODS_CTAssetsPickerNoAssetsView
+__OBJC_$_INSTANCE_VARIABLES_CTAssetsPickerNoAssetsView
+__OBJC_$_PROP_LIST_CTAssetsPickerNoAssetsView
+__OBJC_CLASS_RO_$_CTAssetsPickerNoAssetsView
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetsPickerNoAssetsView.m
+CTAssetsPicker/Classes/CTAssetsPickerNoAssetsView.m
+-[CTAssetSelectionButton initWithFrame:]
+-[CTAssetSelectionButton setupViews]
+-[CTAssetSelectionButton localize]
+-[CTAssetSelectionButton updateConstraints]
+___43-[CTAssetSelectionButton updateConstraints]_block_invoke
+-[CTAssetSelectionButton setSelected:]
+-[CTAssetSelectionButton checkmark]
+-[CTAssetSelectionButton setCheckmark:]
+-[CTAssetSelectionButton backgroundView]
+-[CTAssetSelectionButton setBackgroundView:]
+-[CTAssetSelectionButton didSetupConstraints]
+-[CTAssetSelectionButton setDidSetupConstraints:]
+-[CTAssetSelectionButton .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.31
+_OBJC_CLASSLIST_REFERENCES_$_.48
+___block_descriptor_56_e8_32s_e5_v8?0l
+_OBJC_IVAR_$_CTAssetSelectionButton._checkmark
+_OBJC_IVAR_$_CTAssetSelectionButton._backgroundView
+_OBJC_IVAR_$_CTAssetSelectionButton._didSetupConstraints
+__OBJC_METACLASS_RO_$_CTAssetSelectionButton
+__OBJC_$_INSTANCE_METHODS_CTAssetSelectionButton
+__OBJC_$_INSTANCE_VARIABLES_CTAssetSelectionButton
+__OBJC_$_PROP_LIST_CTAssetSelectionButton
+__OBJC_CLASS_RO_$_CTAssetSelectionButton
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetSelectionButton.m
+CTAssetsPicker/Classes/CTAssetSelectionButton.m
+__43-[CTAssetSelectionButton updateConstraints]_block_invoke
+-[CTAssetsGridSelectedView initWithFrame:]
+-[CTAssetsGridSelectedView setupViews]
+-[CTAssetsGridSelectedView setShowsSelectionIndex:]
+-[CTAssetsGridSelectedView setSelectionIndex:]
+-[CTAssetsGridSelectedView selectedBackgroundColor]
+-[CTAssetsGridSelectedView setSelectedBackgroundColor:]
+-[CTAssetsGridSelectedView borderWidth]
+-[CTAssetsGridSelectedView setBorderWidth:]
+-[CTAssetsGridSelectedView setTintColor:]
+-[CTAssetsGridSelectedView accessibilityLabel]
+-[CTAssetsGridSelectedView showsSelectionIndex]
+-[CTAssetsGridSelectedView selectionIndex]
+-[CTAssetsGridSelectedView font]
+-[CTAssetsGridSelectedView setFont:]
+-[CTAssetsGridSelectedView textColor]
+-[CTAssetsGridSelectedView setTextColor:]
+-[CTAssetsGridSelectedView checkmark]
+-[CTAssetsGridSelectedView setCheckmark:]
+-[CTAssetsGridSelectedView selectionIndexLabel]
+-[CTAssetsGridSelectedView setSelectionIndexLabel:]
+-[CTAssetsGridSelectedView .cxx_destruct]
+_OBJC_IVAR_$_CTAssetsGridSelectedView._showsSelectionIndex
+_OBJC_IVAR_$_CTAssetsGridSelectedView._selectionIndex
+_OBJC_CLASSLIST_REFERENCES_$_.38
+_OBJC_IVAR_$_CTAssetsGridSelectedView._font
+_OBJC_IVAR_$_CTAssetsGridSelectedView._textColor
+_OBJC_IVAR_$_CTAssetsGridSelectedView._checkmark
+_OBJC_IVAR_$_CTAssetsGridSelectedView._selectionIndexLabel
+__OBJC_METACLASS_RO_$_CTAssetsGridSelectedView
+__OBJC_$_INSTANCE_METHODS_CTAssetsGridSelectedView
+__OBJC_$_INSTANCE_VARIABLES_CTAssetsGridSelectedView
+__OBJC_$_PROP_LIST_CTAssetsGridSelectedView
+__OBJC_CLASS_RO_$_CTAssetsGridSelectedView
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetsGridSelectedView.m
+CTAssetsPicker/Classes/CTAssetsGridSelectedView.m
+CTAssetsPicker/Classes/CTAssetsGridSelectedView.h
+-[CTAssetPlayButton initWithFrame:]
+-[CTAssetPlayButton setupViews]
+-[CTAssetPlayButton setupEffectViews]
+-[CTAssetPlayButton setupHightlightedView]
+-[CTAssetPlayButton setupColorView]
+-[CTAssetPlayButton setupMaskViews]
+-[CTAssetPlayButton localize]
+-[CTAssetPlayButton updateConstraints]
+___38-[CTAssetPlayButton updateConstraints]_block_invoke
+-[CTAssetPlayButton setHighlighted:]
+-[CTAssetPlayButton blurView]
+-[CTAssetPlayButton setBlurView:]
+-[CTAssetPlayButton vibrancyView]
+-[CTAssetPlayButton setVibrancyView:]
+-[CTAssetPlayButton vibrancyFill]
+-[CTAssetPlayButton setVibrancyFill:]
+-[CTAssetPlayButton highlightedView]
+-[CTAssetPlayButton setHighlightedView:]
+-[CTAssetPlayButton colorView]
+-[CTAssetPlayButton setColorView:]
+-[CTAssetPlayButton glyphMask]
+-[CTAssetPlayButton setGlyphMask:]
+-[CTAssetPlayButton buttonMask]
+-[CTAssetPlayButton setButtonMask:]
+-[CTAssetPlayButton didSetupConstraints]
+-[CTAssetPlayButton setDidSetupConstraints:]
+-[CTAssetPlayButton .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.19
+_OBJC_CLASSLIST_REFERENCES_$_.63
+_OBJC_CLASSLIST_REFERENCES_$_.66
+_OBJC_CLASSLIST_REFERENCES_$_.73
+_OBJC_IVAR_$_CTAssetPlayButton._blurView
+_OBJC_IVAR_$_CTAssetPlayButton._vibrancyView
+_OBJC_IVAR_$_CTAssetPlayButton._vibrancyFill
+_OBJC_IVAR_$_CTAssetPlayButton._highlightedView
+_OBJC_IVAR_$_CTAssetPlayButton._colorView
+_OBJC_IVAR_$_CTAssetPlayButton._glyphMask
+_OBJC_IVAR_$_CTAssetPlayButton._buttonMask
+_OBJC_IVAR_$_CTAssetPlayButton._didSetupConstraints
+__OBJC_METACLASS_RO_$_CTAssetPlayButton
+__OBJC_$_INSTANCE_METHODS_CTAssetPlayButton
+__OBJC_$_INSTANCE_VARIABLES_CTAssetPlayButton
+__OBJC_$_PROP_LIST_CTAssetPlayButton
+__OBJC_CLASS_RO_$_CTAssetPlayButton
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetPlayButton.m
+CTAssetsPicker/Classes/CTAssetPlayButton.m
+__38-[CTAssetPlayButton updateConstraints]_block_invoke
+-[CTAssetThumbnailStacks initWithFrame:]
+-[CTAssetThumbnailStacks setupViews]
+-[CTAssetThumbnailStacks setThumbnailSize:]
+-[CTAssetThumbnailStacks updateConstraints]
+___43-[CTAssetThumbnailStacks updateConstraints]_block_invoke
+___43-[CTAssetThumbnailStacks updateConstraints]_block_invoke.59
+-[CTAssetThumbnailStacks thumbnailAtIndex:]
+-[CTAssetThumbnailStacks setHighlighted:]
+-[CTAssetThumbnailStacks thumbnailSize]
+-[CTAssetThumbnailStacks thumbnailViews]
+-[CTAssetThumbnailStacks setThumbnailViews:]
+-[CTAssetThumbnailStacks edgeInsets]
+-[CTAssetThumbnailStacks setEdgeInsets:]
+-[CTAssetThumbnailStacks didSetupConstraints]
+-[CTAssetThumbnailStacks setDidSetupConstraints:]
+-[CTAssetThumbnailStacks .cxx_destruct]
+_OBJC_IVAR_$_CTAssetThumbnailStacks._edgeInsets
+_OBJC_CLASSLIST_REFERENCES_$_.16
+_OBJC_IVAR_$_CTAssetThumbnailStacks._thumbnailSize
+_OBJC_CLASSLIST_REFERENCES_$_.54
+_OBJC_IVAR_$_CTAssetThumbnailStacks._thumbnailViews
+_OBJC_IVAR_$_CTAssetThumbnailStacks._didSetupConstraints
+__OBJC_METACLASS_RO_$_CTAssetThumbnailStacks
+__OBJC_$_INSTANCE_METHODS_CTAssetThumbnailStacks
+__OBJC_$_INSTANCE_VARIABLES_CTAssetThumbnailStacks
+__OBJC_$_PROP_LIST_CTAssetThumbnailStacks
+__OBJC_CLASS_RO_$_CTAssetThumbnailStacks
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetThumbnailStacks.m
+CTAssetsPicker/Classes/CTAssetThumbnailStacks.m
+CTAssetsPicker/Classes/CTAssetThumbnailStacks.h
+__43-[CTAssetThumbnailStacks updateConstraints]_block_invoke.59
+__43-[CTAssetThumbnailStacks updateConstraints]_block_invoke
+-[CTAssetsGridView initWithFrame:]
+-[CTAssetsGridView setupViews]
+-[CTAssetsGridView gridBackgroundColor]
+-[CTAssetsGridView setGridBackgroundColor:]
+-[CTAssetsGridView updateConstraints]
+-[CTAssetsGridView didSetupConstraints]
+-[CTAssetsGridView setDidSetupConstraints:]
+_OBJC_IVAR_$_CTAssetsGridView._didSetupConstraints
+__OBJC_METACLASS_RO_$_CTAssetsGridView
+__OBJC_$_INSTANCE_METHODS_CTAssetsGridView
+__OBJC_$_INSTANCE_VARIABLES_CTAssetsGridView
+__OBJC_$_PROP_LIST_CTAssetsGridView
+__OBJC_CLASS_RO_$_CTAssetsGridView
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetsGridView.m
+CTAssetsPicker/Classes/CTAssetsGridView.m
+-[CTAssetsGridViewFooter initWithFrame:]
+-[CTAssetsGridViewFooter setupViews]
+-[CTAssetsGridViewFooter font]
+-[CTAssetsGridViewFooter setFont:]
+-[CTAssetsGridViewFooter textColor]
+-[CTAssetsGridViewFooter setTextColor:]
+-[CTAssetsGridViewFooter updateConstraints]
+-[CTAssetsGridViewFooter bind:]
+-[CTAssetsGridViewFooter label]
+-[CTAssetsGridViewFooter setLabel:]
+-[CTAssetsGridViewFooter didSetupConstraints]
+-[CTAssetsGridViewFooter setDidSetupConstraints:]
+-[CTAssetsGridViewFooter .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.37
+_OBJC_CLASSLIST_REFERENCES_$_.44
+_OBJC_IVAR_$_CTAssetsGridViewFooter._label
+_OBJC_IVAR_$_CTAssetsGridViewFooter._didSetupConstraints
+__OBJC_METACLASS_RO_$_CTAssetsGridViewFooter
+__OBJC_$_INSTANCE_METHODS_CTAssetsGridViewFooter
+__OBJC_$_INSTANCE_VARIABLES_CTAssetsGridViewFooter
+__OBJC_$_PROP_LIST_CTAssetsGridViewFooter
+__OBJC_CLASS_RO_$_CTAssetsGridViewFooter
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetsGridViewFooter.m
+CTAssetsPicker/Classes/CTAssetsGridViewFooter.m
+-[CTAssetThumbnailView initWithFrame:]
+-[CTAssetThumbnailView setupViews]
+-[CTAssetThumbnailView setBackgroundImage:]
+-[CTAssetThumbnailView setBounds:]
+-[CTAssetThumbnailView updateConstraints]
+-[CTAssetThumbnailView bind:asset:]
+-[CTAssetThumbnailView setupOverlayForAsset:]
+-[CTAssetThumbnailView bind:assetCollection:]
+-[CTAssetThumbnailView setupOverlayForAssetCollection:]
+-[CTAssetThumbnailView showsDuration]
+-[CTAssetThumbnailView setShowsDuration:]
+-[CTAssetThumbnailView backgroundImage]
+-[CTAssetThumbnailView overlay]
+-[CTAssetThumbnailView setOverlay:]
+-[CTAssetThumbnailView imageView]
+-[CTAssetThumbnailView setImageView:]
+-[CTAssetThumbnailView backgroundView]
+-[CTAssetThumbnailView setBackgroundView:]
+-[CTAssetThumbnailView didSetupConstraints]
+-[CTAssetThumbnailView setDidSetupConstraints:]
+-[CTAssetThumbnailView .cxx_destruct]
+_OBJC_IVAR_$_CTAssetThumbnailView._showsDuration
+_OBJC_CLASSLIST_REFERENCES_$_.15
+_OBJC_IVAR_$_CTAssetThumbnailView._backgroundImage
+_OBJC_CLASSLIST_REFERENCES_$_.60
+_OBJC_CLASSLIST_REFERENCES_$_.67
+_OBJC_IVAR_$_CTAssetThumbnailView._overlay
+_OBJC_IVAR_$_CTAssetThumbnailView._imageView
+_OBJC_IVAR_$_CTAssetThumbnailView._backgroundView
+_OBJC_IVAR_$_CTAssetThumbnailView._didSetupConstraints
+__OBJC_METACLASS_RO_$_CTAssetThumbnailView
+__OBJC_$_INSTANCE_METHODS_CTAssetThumbnailView
+__OBJC_$_INSTANCE_VARIABLES_CTAssetThumbnailView
+__OBJC_$_PROP_LIST_CTAssetThumbnailView
+__OBJC_CLASS_RO_$_CTAssetThumbnailView
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetThumbnailView.m
+CTAssetsPicker/Classes/CTAssetThumbnailView.m
+CTAssetsPicker/Classes/CTAssetThumbnailView.h
+-[UIColor(SKDarkMode) adaptive]
+___31-[UIColor(SKDarkMode) adaptive]_block_invoke
+-[UIColor(SKDarkMode) adaptiveWithDark:]
+___40-[UIColor(SKDarkMode) adaptiveWithDark:]_block_invoke
+___clang_at_available_requires_core_foundation_framework
+___block_descriptor_40_e8_32s_e36_"UIColor"16?0"UITraitCollection"8l
+___block_descriptor_48_e8_32s40s_e36_"UIColor"16?0"UITraitCollection"8l
+__OBJC_$_CATEGORY_INSTANCE_METHODS_UIColor_$_SKDarkMode
+__OBJC_$_PROP_LIST_UIColor_$_SKDarkMode
+__OBJC_$_CATEGORY_UIColor_$_SKDarkMode
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Categories/UIColor+SKDarkMode.m
+__40-[UIColor(SKDarkMode) adaptiveWithDark:]_block_invoke
+CTAssetsPicker/Categories/UIColor+SKDarkMode.m
+__31-[UIColor(SKDarkMode) adaptive]_block_invoke
++[PHAssetCollection(CTAssetsPickerController) ctassetPickerAssetCollectionTypeOfSubtype:]
+-[PHAssetCollection(CTAssetsPickerController) ctassetPikcerCountOfAssetsFetchedWithOptions:]
+-[PHAssetCollection(CTAssetsPickerController) badgeImage]
+_OBJC_CLASSLIST_REFERENCES_$_.23
+__OBJC_$_CATEGORY_INSTANCE_METHODS_PHAssetCollection_$_CTAssetsPickerController
+__OBJC_$_CATEGORY_CLASS_METHODS_PHAssetCollection_$_CTAssetsPickerController
+__OBJC_$_CATEGORY_PHAssetCollection_$_CTAssetsPickerController
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Categories/PHAssetCollection+CTAssetsPickerController.m
+CTAssetsPicker/Categories/PHAssetCollection+CTAssetsPickerController.m
+-[CTAssetCollectionViewCell initWithThumbnailSize:reuseIdentifier:]
+-[CTAssetCollectionViewCell setupViews]
+-[CTAssetCollectionViewCell setupPlaceholderImage]
+-[CTAssetCollectionViewCell placeHolderImageNameOfCollectionSubtype:]
+-[CTAssetCollectionViewCell titleFont]
+-[CTAssetCollectionViewCell setTitleFont:]
+-[CTAssetCollectionViewCell setTitleTextColor:]
+-[CTAssetCollectionViewCell setSelectedTitleTextColor:]
+-[CTAssetCollectionViewCell countFont]
+-[CTAssetCollectionViewCell setCountFont:]
+-[CTAssetCollectionViewCell setCountTextColor:]
+-[CTAssetCollectionViewCell setSelectedCountTextColor:]
+-[CTAssetCollectionViewCell setAccessoryColor:]
+-[CTAssetCollectionViewCell setSelectedAccessoryColor:]
+-[CTAssetCollectionViewCell selectedBackgroundColor]
+-[CTAssetCollectionViewCell setSelectedBackgroundColor:]
+-[CTAssetCollectionViewCell setHighlighted:animated:]
+-[CTAssetCollectionViewCell setSelected:animated:]
+-[CTAssetCollectionViewCell updateConstraints]
+___46-[CTAssetCollectionViewCell updateConstraints]_block_invoke
+___46-[CTAssetCollectionViewCell updateConstraints]_block_invoke.131
+-[CTAssetCollectionViewCell bind:count:]
+-[CTAssetCollectionViewCell accessibilityLabel]
+-[CTAssetCollectionViewCell thumbnailStacks]
+-[CTAssetCollectionViewCell setThumbnailStacks:]
+-[CTAssetCollectionViewCell titleTextColor]
+-[CTAssetCollectionViewCell selectedTitleTextColor]
+-[CTAssetCollectionViewCell countTextColor]
+-[CTAssetCollectionViewCell selectedCountTextColor]
+-[CTAssetCollectionViewCell accessoryColor]
+-[CTAssetCollectionViewCell selectedAccessoryColor]
+-[CTAssetCollectionViewCell thumbnailSize]
+-[CTAssetCollectionViewCell setThumbnailSize:]
+-[CTAssetCollectionViewCell labelsView]
+-[CTAssetCollectionViewCell setLabelsView:]
+-[CTAssetCollectionViewCell titleLabel]
+-[CTAssetCollectionViewCell setTitleLabel:]
+-[CTAssetCollectionViewCell countLabel]
+-[CTAssetCollectionViewCell setCountLabel:]
+-[CTAssetCollectionViewCell didSetupConstraints]
+-[CTAssetCollectionViewCell setDidSetupConstraints:]
+-[CTAssetCollectionViewCell collection]
+-[CTAssetCollectionViewCell setCollection:]
+-[CTAssetCollectionViewCell count]
+-[CTAssetCollectionViewCell setCount:]
+-[CTAssetCollectionViewCell .cxx_destruct]
+_OBJC_IVAR_$_CTAssetCollectionViewCell._thumbnailSize
+_OBJC_IVAR_$_CTAssetCollectionViewCell._titleTextColor
+_OBJC_IVAR_$_CTAssetCollectionViewCell._selectedTitleTextColor
+_OBJC_IVAR_$_CTAssetCollectionViewCell._countTextColor
+_OBJC_IVAR_$_CTAssetCollectionViewCell._selectedCountTextColor
+_OBJC_IVAR_$_CTAssetCollectionViewCell._accessoryColor
+_OBJC_IVAR_$_CTAssetCollectionViewCell._selectedAccessoryColor
+_OBJC_CLASSLIST_REFERENCES_$_.32
+_OBJC_SELECTOR_REFERENCES_.86
+_OBJC_SELECTOR_REFERENCES_.110
+_OBJC_SELECTOR_REFERENCES_.114
+_OBJC_SELECTOR_REFERENCES_.124
+_OBJC_CLASSLIST_REFERENCES_$_.125
+_OBJC_SELECTOR_REFERENCES_.145
+_OBJC_SELECTOR_REFERENCES_.147
+_OBJC_SELECTOR_REFERENCES_.149
+_OBJC_CLASSLIST_REFERENCES_$_.164
+_OBJC_SELECTOR_REFERENCES_.174
+_OBJC_CLASSLIST_REFERENCES_$_.177
+_OBJC_IVAR_$_CTAssetCollectionViewCell._thumbnailStacks
+_OBJC_IVAR_$_CTAssetCollectionViewCell._labelsView
+_OBJC_IVAR_$_CTAssetCollectionViewCell._titleLabel
+_OBJC_IVAR_$_CTAssetCollectionViewCell._countLabel
+_OBJC_IVAR_$_CTAssetCollectionViewCell._didSetupConstraints
+_OBJC_IVAR_$_CTAssetCollectionViewCell._collection
+_OBJC_IVAR_$_CTAssetCollectionViewCell._count
+__OBJC_METACLASS_RO_$_CTAssetCollectionViewCell
+__OBJC_$_INSTANCE_METHODS_CTAssetCollectionViewCell
+__OBJC_$_INSTANCE_VARIABLES_CTAssetCollectionViewCell
+__OBJC_$_PROP_LIST_CTAssetCollectionViewCell
+__OBJC_CLASS_RO_$_CTAssetCollectionViewCell
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetCollectionViewCell.m
+CTAssetsPicker/Classes/CTAssetCollectionViewCell.m
+CTAssetsPicker/Classes/CTAssetCollectionViewCell.h
+__46-[CTAssetCollectionViewCell updateConstraints]_block_invoke.131
+__46-[CTAssetCollectionViewCell updateConstraints]_block_invoke
+-[NSNumberFormatter(CTAssetsPickerController) ctassetsPickerStringFromAssetsCount:]
+__OBJC_$_CATEGORY_INSTANCE_METHODS_NSNumberFormatter_$_CTAssetsPickerController
+__OBJC_$_CATEGORY_NSNumberFormatter_$_CTAssetsPickerController
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Categories/NSNumberFormatter+CTAssetsPickerController.m
+CTAssetsPicker/Categories/NSNumberFormatter+CTAssetsPickerController.m
++[PHImageManager(CTAssetsPickerController) ctassetsPickerNeedsiPadSupportSize]
++[PHImageManager(CTAssetsPickerController) ctassetsPickerSizeForSize:withMinimumDimension:]
+-[PHImageManager(CTAssetsPickerController) ctassetsPickerRequestImageForAsset:targetSize:contentMode:options:resultHandler:]
+__OBJC_$_CATEGORY_INSTANCE_METHODS_PHImageManager_$_CTAssetsPickerController
+__OBJC_$_CATEGORY_CLASS_METHODS_PHImageManager_$_CTAssetsPickerController
+__OBJC_$_CATEGORY_PHImageManager_$_CTAssetsPickerController
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Categories/PHImageManager+CTAssetsPickerController.m
+CTAssetsPicker/Categories/PHImageManager+CTAssetsPickerController.m
+-[CTAssetsPageViewController initWithFetchResult:]
+-[CTAssetsPageViewController initWithAssets:]
+-[CTAssetsPageViewController viewDidLoad]
+-[CTAssetsPageViewController dealloc]
+-[CTAssetsPageViewController prefersStatusBarHidden]
+-[CTAssetsPageViewController setupViews]
+-[CTAssetsPageViewController setupButtons]
+-[CTAssetsPageViewController updateTitle:]
+-[CTAssetsPageViewController updateToolbar]
+-[CTAssetsPageViewController replaceToolbarButton:]
+-[CTAssetsPageViewController toolbarSpace]
+-[CTAssetsPageViewController pageIndex]
+-[CTAssetsPageViewController setPageIndex:]
+-[CTAssetsPageViewController asset]
+-[CTAssetsPageViewController pageViewController:viewControllerBeforeViewController:]
+-[CTAssetsPageViewController pageViewController:viewControllerAfterViewController:]
+-[CTAssetsPageViewController pageViewController:didFinishAnimating:previousViewControllers:transitionCompleted:]
+-[CTAssetsPageViewController pageViewController:willTransitionToViewControllers:]
+-[CTAssetsPageViewController addNotificationObserver]
+-[CTAssetsPageViewController removeNotificationObserver]
+-[CTAssetsPageViewController assetScrollViewDidTap:]
+-[CTAssetsPageViewController assetScrollViewPlayerDidPlayToEnd:]
+-[CTAssetsPageViewController assetScrollViewPlayerWillPlay:]
+-[CTAssetsPageViewController assetScrollViewPlayerWillPause:]
+-[CTAssetsPageViewController toggleFullscreen:]
+-[CTAssetsPageViewController setFullscreen:]
+-[CTAssetsPageViewController fadeInControls:]
+___45-[CTAssetsPageViewController fadeInControls:]_block_invoke
+-[CTAssetsPageViewController fadeAwayControls:]
+___47-[CTAssetsPageViewController fadeAwayControls:]_block_invoke
+-[CTAssetsPageViewController playAsset:]
+-[CTAssetsPageViewController pauseAsset:]
+-[CTAssetsPageViewController allowsSelection]
+-[CTAssetsPageViewController setAllowsSelection:]
+-[CTAssetsPageViewController isStatusBarHidden]
+-[CTAssetsPageViewController setStatusBarHidden:]
+-[CTAssetsPageViewController assets]
+-[CTAssetsPageViewController setAssets:]
+-[CTAssetsPageViewController pageView]
+-[CTAssetsPageViewController setPageView:]
+-[CTAssetsPageViewController playButton]
+-[CTAssetsPageViewController setPlayButton:]
+-[CTAssetsPageViewController pauseButton]
+-[CTAssetsPageViewController setPauseButton:]
+-[CTAssetsPageViewController .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.57
+_OBJC_CLASSLIST_REFERENCES_$_.62
+_OBJC_CLASSLIST_REFERENCES_$_.77
+_OBJC_CLASSLIST_REFERENCES_$_.82
+_OBJC_CLASSLIST_REFERENCES_$_.83
+_OBJC_SELECTOR_REFERENCES_.111
+_OBJC_CLASSLIST_REFERENCES_$_.118
+_OBJC_SELECTOR_REFERENCES_.155
+_OBJC_SELECTOR_REFERENCES_.163
+_OBJC_SELECTOR_REFERENCES_.165
+_OBJC_IVAR_$_CTAssetsPageViewController._allowsSelection
+_OBJC_IVAR_$_CTAssetsPageViewController._statusBarHidden
+_OBJC_IVAR_$_CTAssetsPageViewController._assets
+_OBJC_IVAR_$_CTAssetsPageViewController._pageView
+_OBJC_IVAR_$_CTAssetsPageViewController._playButton
+_OBJC_IVAR_$_CTAssetsPageViewController._pauseButton
+__OBJC_$_PROTOCOL_REFS_UIPageViewControllerDataSource
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_UIPageViewControllerDataSource
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UIPageViewControllerDataSource
+__OBJC_$_PROTOCOL_METHOD_TYPES_UIPageViewControllerDataSource
+__OBJC_PROTOCOL_$_UIPageViewControllerDataSource
+__OBJC_LABEL_PROTOCOL_$_UIPageViewControllerDataSource
+__OBJC_$_PROTOCOL_REFS_UIPageViewControllerDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UIPageViewControllerDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_UIPageViewControllerDelegate
+__OBJC_PROTOCOL_$_UIPageViewControllerDelegate
+__OBJC_LABEL_PROTOCOL_$_UIPageViewControllerDelegate
+__OBJC_CLASS_PROTOCOLS_$_CTAssetsPageViewController
+__OBJC_METACLASS_RO_$_CTAssetsPageViewController
+__OBJC_$_INSTANCE_METHODS_CTAssetsPageViewController
+__OBJC_$_INSTANCE_VARIABLES_CTAssetsPageViewController
+__OBJC_$_PROP_LIST_CTAssetsPageViewController
+__OBJC_CLASS_RO_$_CTAssetsPageViewController
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetsPageViewController.m
+CTAssetsPicker/Classes/CTAssetsPageViewController.m
+__47-[CTAssetsPageViewController fadeAwayControls:]_block_invoke
+__45-[CTAssetsPageViewController fadeInControls:]_block_invoke
+-[CTAssetScrollView initWithFrame:]
+-[CTAssetScrollView dealloc]
+-[CTAssetScrollView setupViews]
+-[CTAssetScrollView updateConstraints]
+-[CTAssetScrollView updateSelectionButtonIfNeeded]
+-[CTAssetScrollView updateProgressConstraints]
+___46-[CTAssetScrollView updateProgressConstraints]_block_invoke
+___46-[CTAssetScrollView updateProgressConstraints]_block_invoke.97
+-[CTAssetScrollView updateActivityConstraints]
+-[CTAssetScrollView updateButtonsConstraints]
+___45-[CTAssetScrollView updateButtonsConstraints]_block_invoke
+___45-[CTAssetScrollView updateButtonsConstraints]_block_invoke_2
+-[CTAssetScrollView updateContentFrame]
+-[CTAssetScrollView startActivityAnimating]
+-[CTAssetScrollView stopActivityAnimating]
+-[CTAssetScrollView setProgress:]
+-[CTAssetScrollView mimicProgress]
+-[CTAssetScrollView assetSize]
+-[CTAssetScrollView bind:image:requestInfo:]
+-[CTAssetScrollView bind:requestInfo:]
+-[CTAssetScrollView unbindPlayerItem]
+-[CTAssetScrollView updateZoomScalesAndZoom:]
+-[CTAssetScrollView zoomToInitialScale]
+-[CTAssetScrollView zoomToMinimumZoomScaleAnimated:]
+-[CTAssetScrollView zoomToMaximumZoomScaleWithGestureRecognizer:]
+___65-[CTAssetScrollView zoomToMaximumZoomScaleWithGestureRecognizer:]_block_invoke
+-[CTAssetScrollView canPerspectiveZoom]
+-[CTAssetScrollView zoomToPerspectiveZoomScaleAnimated:]
+-[CTAssetScrollView zoomRectWithScale:]
+-[CTAssetScrollView zoomWithGestureRecognizer:]
+-[CTAssetScrollView zoomRectWithScale:withCenter:]
+-[CTAssetScrollView addGestureRecognizers]
+-[CTAssetScrollView handleTapping:]
+-[CTAssetScrollView viewForZoomingInScrollView:]
+-[CTAssetScrollView scrollViewWillBeginZooming:withView:]
+-[CTAssetScrollView scrollViewDidZoom:]
+-[CTAssetScrollView gestureRecognizer:shouldReceiveTouch:]
+-[CTAssetScrollView addPlayerNotificationObserver]
+-[CTAssetScrollView removePlayerNotificationObserver]
+-[CTAssetScrollView addPlayerLoadedTimeRangesObserver]
+-[CTAssetScrollView removePlayerLoadedTimeRangesObserver]
+-[CTAssetScrollView addPlayerRateObserver]
+-[CTAssetScrollView removePlayerRateObserver]
+-[CTAssetScrollView observeValueForKeyPath:ofObject:change:context:]
+-[CTAssetScrollView postPlayerWillPlayNotification]
+-[CTAssetScrollView postPlayerWillPauseNotification]
+-[CTAssetScrollView applicationWillResignActive:]
+-[CTAssetScrollView playerDidPlay:]
+-[CTAssetScrollView playerDidPause:]
+-[CTAssetScrollView playerDidLoadItem:]
+-[CTAssetScrollView playVideo]
+-[CTAssetScrollView pauseVideo]
+-[CTAssetScrollView allowsSelection]
+-[CTAssetScrollView setAllowsSelection:]
+-[CTAssetScrollView image]
+-[CTAssetScrollView setImage:]
+-[CTAssetScrollView player]
+-[CTAssetScrollView setPlayer:]
+-[CTAssetScrollView imageView]
+-[CTAssetScrollView setImageView:]
+-[CTAssetScrollView playButton]
+-[CTAssetScrollView setPlayButton:]
+-[CTAssetScrollView selectionButton]
+-[CTAssetScrollView setSelectionButton:]
+-[CTAssetScrollView asset]
+-[CTAssetScrollView setAsset:]
+-[CTAssetScrollView didLoadPlayerItem]
+-[CTAssetScrollView setDidLoadPlayerItem:]
+-[CTAssetScrollView perspectiveZoomScale]
+-[CTAssetScrollView setPerspectiveZoomScale:]
+-[CTAssetScrollView progressView]
+-[CTAssetScrollView setProgressView:]
+-[CTAssetScrollView activityView]
+-[CTAssetScrollView setActivityView:]
+-[CTAssetScrollView shouldUpdateConstraints]
+-[CTAssetScrollView setShouldUpdateConstraints:]
+-[CTAssetScrollView didSetupConstraints]
+-[CTAssetScrollView setDidSetupConstraints:]
+-[CTAssetScrollView .cxx_destruct]
+_OBJC_IVAR_$_CTAssetScrollView._shouldUpdateConstraints
+_OBJC_CLASSLIST_REFERENCES_$_.41
+_OBJC_CLASSLIST_REFERENCES_$_.55
+_OBJC_CLASSLIST_REFERENCES_$_.89
+_OBJC_CLASSLIST_REFERENCES_$_.128
+_OBJC_CLASSLIST_REFERENCES_$_.170
+_OBJC_SELECTOR_REFERENCES_.172
+_OBJC_CLASSLIST_REFERENCES_$_.223
+___block_descriptor_72_e8_32s_e5_v8?0l
+_OBJC_CLASSLIST_REFERENCES_$_.238
+_OBJC_CLASSLIST_REFERENCES_$_.249
+_OBJC_SELECTOR_REFERENCES_.255
+_OBJC_SELECTOR_REFERENCES_.271
+_OBJC_SELECTOR_REFERENCES_.275
+_OBJC_SELECTOR_REFERENCES_.277
+_OBJC_SELECTOR_REFERENCES_.281
+_OBJC_SELECTOR_REFERENCES_.283
+_OBJC_SELECTOR_REFERENCES_.285
+_OBJC_SELECTOR_REFERENCES_.287
+_OBJC_SELECTOR_REFERENCES_.289
+_OBJC_SELECTOR_REFERENCES_.291
+_OBJC_SELECTOR_REFERENCES_.299
+_OBJC_SELECTOR_REFERENCES_.311
+_OBJC_SELECTOR_REFERENCES_.313
+_OBJC_SELECTOR_REFERENCES_.315
+_OBJC_SELECTOR_REFERENCES_.317
+_OBJC_SELECTOR_REFERENCES_.319
+_OBJC_IVAR_$_CTAssetScrollView._allowsSelection
+_OBJC_IVAR_$_CTAssetScrollView._image
+_OBJC_IVAR_$_CTAssetScrollView._player
+_OBJC_IVAR_$_CTAssetScrollView._imageView
+_OBJC_IVAR_$_CTAssetScrollView._playButton
+_OBJC_IVAR_$_CTAssetScrollView._selectionButton
+_OBJC_IVAR_$_CTAssetScrollView._asset
+_OBJC_IVAR_$_CTAssetScrollView._didLoadPlayerItem
+_OBJC_IVAR_$_CTAssetScrollView._perspectiveZoomScale
+_OBJC_IVAR_$_CTAssetScrollView._progressView
+_OBJC_IVAR_$_CTAssetScrollView._activityView
+_OBJC_IVAR_$_CTAssetScrollView._didSetupConstraints
+__OBJC_$_PROTOCOL_REFS_UIScrollViewDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UIScrollViewDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_UIScrollViewDelegate
+__OBJC_PROTOCOL_$_UIScrollViewDelegate
+__OBJC_LABEL_PROTOCOL_$_UIScrollViewDelegate
+__OBJC_CLASS_PROTOCOLS_$_CTAssetScrollView
+__OBJC_METACLASS_RO_$_CTAssetScrollView
+__OBJC_$_INSTANCE_METHODS_CTAssetScrollView
+__OBJC_$_INSTANCE_VARIABLES_CTAssetScrollView
+__OBJC_$_PROP_LIST_CTAssetScrollView
+__OBJC_CLASS_RO_$_CTAssetScrollView
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetScrollView.m
+CTAssetsPicker/Classes/CTAssetScrollView.m
+CTAssetsPicker/Classes/CTAssetScrollView.h
+__65-[CTAssetScrollView zoomToMaximumZoomScaleWithGestureRecognizer:]_block_invoke
+__45-[CTAssetScrollView updateButtonsConstraints]_block_invoke_2
+__45-[CTAssetScrollView updateButtonsConstraints]_block_invoke
+__46-[CTAssetScrollView updateProgressConstraints]_block_invoke.97
+__46-[CTAssetScrollView updateProgressConstraints]_block_invoke
+-[CTAssetCheckmark initWithFrame:]
+-[CTAssetCheckmark setupViews]
+-[CTAssetCheckmark setMargin:forVerticalEdge:horizontalEdge:]
+-[CTAssetCheckmark updateConstraints]
+___37-[CTAssetCheckmark updateConstraints]_block_invoke
+-[CTAssetCheckmark shadowImageView]
+-[CTAssetCheckmark setShadowImageView:]
+-[CTAssetCheckmark checkmarkImageView]
+-[CTAssetCheckmark setCheckmarkImageView:]
+-[CTAssetCheckmark verticalConstraint]
+-[CTAssetCheckmark setVerticalConstraint:]
+-[CTAssetCheckmark horizontalConstraint]
+-[CTAssetCheckmark setHorizontalConstraint:]
+-[CTAssetCheckmark didSetupConstraints]
+-[CTAssetCheckmark setDidSetupConstraints:]
+-[CTAssetCheckmark .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.9
+_OBJC_CLASSLIST_REFERENCES_$_.47
+_OBJC_IVAR_$_CTAssetCheckmark._shadowImageView
+_OBJC_IVAR_$_CTAssetCheckmark._checkmarkImageView
+_OBJC_IVAR_$_CTAssetCheckmark._verticalConstraint
+_OBJC_IVAR_$_CTAssetCheckmark._horizontalConstraint
+_OBJC_IVAR_$_CTAssetCheckmark._didSetupConstraints
+__OBJC_METACLASS_RO_$_CTAssetCheckmark
+__OBJC_$_INSTANCE_METHODS_CTAssetCheckmark
+__OBJC_$_INSTANCE_VARIABLES_CTAssetCheckmark
+__OBJC_$_PROP_LIST_CTAssetCheckmark
+__OBJC_CLASS_RO_$_CTAssetCheckmark
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetCheckmark.m
+CTAssetsPicker/Classes/CTAssetCheckmark.m
+__37-[CTAssetCheckmark updateConstraints]_block_invoke
+-[CTAssetCollectionViewController init]
+-[CTAssetCollectionViewController viewDidLoad]
+-[CTAssetCollectionViewController viewWillAppear:]
+-[CTAssetCollectionViewController dealloc]
+-[CTAssetCollectionViewController reloadUserInterface]
+-[CTAssetCollectionViewController picker]
+-[CTAssetCollectionViewController indexPathForAssetCollection:]
+-[CTAssetCollectionViewController setupViews]
+-[CTAssetCollectionViewController setupButtons]
+-[CTAssetCollectionViewController localize]
+-[CTAssetCollectionViewController setupFetchResults]
+-[CTAssetCollectionViewController updateAssetCollections]
+-[CTAssetCollectionViewController setupDefaultAssetCollection]
+-[CTAssetCollectionViewController viewWillTransitionToSize:withTransitionCoordinator:]
+___86-[CTAssetCollectionViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke
+-[CTAssetCollectionViewController addNotificationObserver]
+-[CTAssetCollectionViewController removeNotificationObserver]
+-[CTAssetCollectionViewController registerChangeObserver]
+-[CTAssetCollectionViewController unregisterChangeObserver]
+-[CTAssetCollectionViewController photoLibraryDidChange:]
+___57-[CTAssetCollectionViewController photoLibraryDidChange:]_block_invoke
+-[CTAssetCollectionViewController selectedAssetsChanged:]
+-[CTAssetCollectionViewController updateTitle:]
+-[CTAssetCollectionViewController updateButton:]
+-[CTAssetCollectionViewController isTopViewController]
+-[CTAssetCollectionViewController resetTitle]
+-[CTAssetCollectionViewController contentSizeCategoryChanged:]
+-[CTAssetCollectionViewController reloadData]
+-[CTAssetCollectionViewController numberOfSectionsInTableView:]
+-[CTAssetCollectionViewController tableView:numberOfRowsInSection:]
+-[CTAssetCollectionViewController tableView:cellForRowAtIndexPath:]
+-[CTAssetCollectionViewController requestThumbnailsForCell:assetCollection:]
+___76-[CTAssetCollectionViewController requestThumbnailsForCell:assetCollection:]_block_invoke
+-[CTAssetCollectionViewController posterAssetsFromAssetCollection:count:]
+-[CTAssetCollectionViewController itemsFromFetchResult:range:]
+-[CTAssetCollectionViewController tableView:didSelectRowAtIndexPath:]
+-[CTAssetCollectionViewController showDefaultAssetCollection]
+-[CTAssetCollectionViewController selectDefaultAssetCollection]
+___63-[CTAssetCollectionViewController selectDefaultAssetCollection]_block_invoke
+___63-[CTAssetCollectionViewController selectDefaultAssetCollection]_block_invoke_2
+-[CTAssetCollectionViewController assetsGridViewController:photoLibraryDidChangeForAssetCollection:]
+-[CTAssetCollectionViewController setPicker:]
+-[CTAssetCollectionViewController cancelButton]
+-[CTAssetCollectionViewController setCancelButton:]
+-[CTAssetCollectionViewController doneButton]
+-[CTAssetCollectionViewController setDoneButton:]
+-[CTAssetCollectionViewController fetchResults]
+-[CTAssetCollectionViewController setFetchResults:]
+-[CTAssetCollectionViewController assetCollections]
+-[CTAssetCollectionViewController setAssetCollections:]
+-[CTAssetCollectionViewController imageManager]
+-[CTAssetCollectionViewController setImageManager:]
+-[CTAssetCollectionViewController defaultAssetCollection]
+-[CTAssetCollectionViewController setDefaultAssetCollection:]
+-[CTAssetCollectionViewController didShowDefaultAssetCollection]
+-[CTAssetCollectionViewController setDidShowDefaultAssetCollection:]
+-[CTAssetCollectionViewController didSelectDefaultAssetCollection]
+-[CTAssetCollectionViewController setDidSelectDefaultAssetCollection:]
+-[CTAssetCollectionViewController .cxx_destruct]
+_OBJC_IVAR_$_CTAssetCollectionViewController._imageManager
+_OBJC_CLASSLIST_REFERENCES_$_.64
+_OBJC_CLASSLIST_REFERENCES_$_.120
+_OBJC_CLASSLIST_REFERENCES_$_.146
+_OBJC_CLASSLIST_REFERENCES_$_.157
+_OBJC_CLASSLIST_REFERENCES_$_.201
+_OBJC_CLASSLIST_REFERENCES_$_.224
+___block_descriptor_48_e8_32s40s_e34_v24?0"UIImage"8"NSDictionary"16l
+_OBJC_CLASSLIST_REFERENCES_$_.252
+_OBJC_SELECTOR_REFERENCES_.256
+_OBJC_CLASSLIST_REFERENCES_$_.257
+_OBJC_CLASSLIST_REFERENCES_$_.262
+_OBJC_SELECTOR_REFERENCES_.264
+_OBJC_SELECTOR_REFERENCES_.266
+_OBJC_CLASSLIST_REFERENCES_$_.267
+_OBJC_CLASSLIST_REFERENCES_$_.272
+_OBJC_SELECTOR_REFERENCES_.294
+_OBJC_SELECTOR_REFERENCES_.296
+_OBJC_CLASSLIST_REFERENCES_$_.297
+_OBJC_SELECTOR_REFERENCES_.304
+_OBJC_SELECTOR_REFERENCES_.306
+_OBJC_SELECTOR_REFERENCES_.308
+_OBJC_IVAR_$_CTAssetCollectionViewController._picker
+_OBJC_IVAR_$_CTAssetCollectionViewController._cancelButton
+_OBJC_IVAR_$_CTAssetCollectionViewController._doneButton
+_OBJC_IVAR_$_CTAssetCollectionViewController._fetchResults
+_OBJC_IVAR_$_CTAssetCollectionViewController._assetCollections
+_OBJC_IVAR_$_CTAssetCollectionViewController._defaultAssetCollection
+_OBJC_IVAR_$_CTAssetCollectionViewController._didShowDefaultAssetCollection
+_OBJC_IVAR_$_CTAssetCollectionViewController._didSelectDefaultAssetCollection
+__OBJC_$_PROTOCOL_REFS_CTAssetsGridViewControllerDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_CTAssetsGridViewControllerDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_CTAssetsGridViewControllerDelegate
+__OBJC_PROTOCOL_$_CTAssetsGridViewControllerDelegate
+__OBJC_LABEL_PROTOCOL_$_CTAssetsGridViewControllerDelegate
+__OBJC_CLASS_PROTOCOLS_$_CTAssetCollectionViewController
+__OBJC_METACLASS_RO_$_CTAssetCollectionViewController
+__OBJC_$_INSTANCE_METHODS_CTAssetCollectionViewController
+__OBJC_$_INSTANCE_VARIABLES_CTAssetCollectionViewController
+__OBJC_$_PROP_LIST_CTAssetCollectionViewController
+__OBJC_CLASS_RO_$_CTAssetCollectionViewController
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetCollectionViewController.m
+CTAssetsPicker/Classes/CTAssetCollectionViewController.m
+__63-[CTAssetCollectionViewController selectDefaultAssetCollection]_block_invoke_2
+__63-[CTAssetCollectionViewController selectDefaultAssetCollection]_block_invoke
+NSMakeRange
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+__76-[CTAssetCollectionViewController requestThumbnailsForCell:assetCollection:]_block_invoke
+__57-[CTAssetCollectionViewController photoLibraryDidChange:]_block_invoke
+__86-[CTAssetCollectionViewController viewWillTransitionToSize:withTransitionCoordinator:]_block_invoke
+-[CTAssetsGridViewLayout initWithContentSize:traitCollection:]
+-[CTAssetsGridViewLayout numberOfColumnsForTraitCollection:]
+__OBJC_METACLASS_RO_$_CTAssetsGridViewLayout
+__OBJC_$_INSTANCE_METHODS_CTAssetsGridViewLayout
+__OBJC_CLASS_RO_$_CTAssetsGridViewLayout
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetsGridViewLayout.m
+CTAssetsPicker/Classes/CTAssetsGridViewLayout.m
+-[CTAssetsPickerAccessDeniedView initWithFrame:]
+-[CTAssetsPickerAccessDeniedView setupViews]
+-[CTAssetsPickerAccessDeniedView padlockImageView]
+-[CTAssetsPickerAccessDeniedView updateConstraints]
+-[CTAssetsPickerAccessDeniedView padlock]
+-[CTAssetsPickerAccessDeniedView setPadlock:]
+-[CTAssetsPickerAccessDeniedView title]
+-[CTAssetsPickerAccessDeniedView setTitle:]
+-[CTAssetsPickerAccessDeniedView message]
+-[CTAssetsPickerAccessDeniedView setMessage:]
+-[CTAssetsPickerAccessDeniedView didSetupConstraints]
+-[CTAssetsPickerAccessDeniedView setDidSetupConstraints:]
+-[CTAssetsPickerAccessDeniedView .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.50
+_OBJC_IVAR_$_CTAssetsPickerAccessDeniedView._padlock
+_OBJC_IVAR_$_CTAssetsPickerAccessDeniedView._title
+_OBJC_IVAR_$_CTAssetsPickerAccessDeniedView._message
+_OBJC_IVAR_$_CTAssetsPickerAccessDeniedView._didSetupConstraints
+__OBJC_METACLASS_RO_$_CTAssetsPickerAccessDeniedView
+__OBJC_$_INSTANCE_METHODS_CTAssetsPickerAccessDeniedView
+__OBJC_$_INSTANCE_VARIABLES_CTAssetsPickerAccessDeniedView
+__OBJC_$_PROP_LIST_CTAssetsPickerAccessDeniedView
+__OBJC_CLASS_RO_$_CTAssetsPickerAccessDeniedView
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetsPickerAccessDeniedView.m
+CTAssetsPicker/Classes/CTAssetsPickerAccessDeniedView.m
++[UIImage(CTAssetsPickerController) ctassetsPickerImageNamed:]
+__OBJC_$_CATEGORY_CLASS_METHODS_UIImage_$_CTAssetsPickerController
+__OBJC_$_CATEGORY_UIImage_$_CTAssetsPickerController
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Categories/UIImage+CTAssetsPickerController.m
+CTAssetsPicker/Categories/UIImage+CTAssetsPickerController.m
+-[UICollectionView(CTAssetsPickerController) ctassetsPickerIndexPathsForElementsInRect:]
+__OBJC_$_CATEGORY_INSTANCE_METHODS_UICollectionView_$_CTAssetsPickerController
+__OBJC_$_CATEGORY_UICollectionView_$_CTAssetsPickerController
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Categories/UICollectionView+CTAssetsPickerController.m
+CTAssetsPicker/Categories/UICollectionView+CTAssetsPickerController.m
+-[CTAssetSelectionLabel initWithFrame:]
+-[CTAssetSelectionLabel borderWidth]
+-[CTAssetSelectionLabel setBorderWidth:]
+-[CTAssetSelectionLabel borderColor]
+-[CTAssetSelectionLabel setBorderColor:]
+-[CTAssetSelectionLabel setSize:]
+___33-[CTAssetSelectionLabel setSize:]_block_invoke
+-[CTAssetSelectionLabel setCornerRadius:]
+-[CTAssetSelectionLabel setMargin:]
+-[CTAssetSelectionLabel setMargin:forVerticalEdge:horizontalEdge:]
+-[CTAssetSelectionLabel setTextAttributes:]
+-[CTAssetSelectionLabel updateConstraints]
+___42-[CTAssetSelectionLabel updateConstraints]_block_invoke
+-[CTAssetSelectionLabel isCircular]
+-[CTAssetSelectionLabel setCircular:]
+-[CTAssetSelectionLabel sizeConstraints]
+-[CTAssetSelectionLabel setSizeConstraints:]
+-[CTAssetSelectionLabel verticalConstraint]
+-[CTAssetSelectionLabel setVerticalConstraint:]
+-[CTAssetSelectionLabel horizontalConstraint]
+-[CTAssetSelectionLabel setHorizontalConstraint:]
+-[CTAssetSelectionLabel didSetupConstraints]
+-[CTAssetSelectionLabel setDidSetupConstraints:]
+-[CTAssetSelectionLabel .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.14
+_OBJC_CLASSLIST_REFERENCES_$_.43
+_OBJC_IVAR_$_CTAssetSelectionLabel._circular
+_OBJC_IVAR_$_CTAssetSelectionLabel._sizeConstraints
+_OBJC_IVAR_$_CTAssetSelectionLabel._verticalConstraint
+_OBJC_IVAR_$_CTAssetSelectionLabel._horizontalConstraint
+_OBJC_IVAR_$_CTAssetSelectionLabel._didSetupConstraints
+__OBJC_METACLASS_RO_$_CTAssetSelectionLabel
+__OBJC_$_INSTANCE_METHODS_CTAssetSelectionLabel
+__OBJC_$_INSTANCE_VARIABLES_CTAssetSelectionLabel
+__OBJC_$_PROP_LIST_CTAssetSelectionLabel
+__OBJC_CLASS_RO_$_CTAssetSelectionLabel
+/Users/patrick/Developer/CTAssetsPicker/CTAssetsPicker/Classes/CTAssetSelectionLabel.m
+CTAssetsPicker/Classes/CTAssetSelectionLabel.m
+CTAssetsPicker/Classes/CTAssetSelectionLabel.h
+__42-[CTAssetSelectionLabel updateConstraints]_block_invoke
+__33-[CTAssetSelectionLabel setSize:]_block_invoke
